@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Inno99 — L'ecosistema dell'innovazione all'Aquila</title>
+<meta name="description" content="Inno99 porta l'innovazione all'Aquila con gli Inno Talks — gli Aperitivi dell'Innovazione — e Inno Podcast. Un progetto Innovalley per L'Aquila Capitale Italiana della Cultura 2026." />
+<meta property="og:title" content="Inno99 — L'ecosistema dell'innovazione all'Aquila" />
+<meta property="og:description" content="Le idee migliori nascono davanti a un aperitivo. Primo evento: 2 luglio 2026, L'Aquila." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='42' fill='%2322252C'/%3E%3Ccircle cx='50' cy='44' r='14' fill='%23E97B26'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+<!-- ====== NOISE / GRID OVERLAY ====== -->
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow glow-a" aria-hidden="true"></div>
+<div class="bg-glow glow-b" aria-hidden="true"></div>
+
+<!-- ====== NAV ====== -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Inno99 — home">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="-110 -110 220 220" class="brand-burst-icon">
+        <!-- Inno99 logo: 12 petals, colors: orange #E07820 · yellow #F0A800 · magenta #C82870 -->
+        <path fill="#E07820" d="M 0 -14 C -3 -14 -5 -44 -5 -58 C -4 -65 -11 -72 -8 -78 A 8 8 0 0 0 8 -78 C 11 -72 4 -65 5 -58 C 5 -44 3 -14 0 -14 Z"/>
+        <path fill="#F0A800" d="M 0 -14 C -3 -14 -5 -44 -5 -58 C -4 -65 -11 -72 -8 -78 A 8 8 0 0 0 8 -78 C 11 -72 4 -65 5 -58 C 5 -44 3 -14 0 -14 Z" transform="rotate(30)"/>
+        <path fill="#C82870" d="M 0 -14 C -3 -14 -5 -44 -5 -58 C -4 -65 -11 -72 -8 -78 A 8 8 0 0 0 8 -78 C 11 -72 4 -65 5 -58 C 5 -44 3 -14 0 -14 Z" transform="rotate(60)"/>
+        <path fill="#E07820" d="M 0 -14 C -3 -14 -5 -44 -5 -58 C -4 -65 -11 -72 -8 -78 A 8 8 0 0 0 8 -78 C 11 -72 4 -65 5 -58 C 5 -44 3 -14 0 -14 Z" transform="rotate(90)"/>
+        <path fill="#F0A800" d="M 0 -14 C -3 -14 -5 -44 -5 -58 C -4 -65 -11 -72 -8 -78 A 8 8 0 0 0 8 -78 C 11 -72 4 -65 5 -58 C 5 -44 3 -14 0 -14 Z" transform="rotate(120)"/>
+        <path fill="#C82870" d="M 0 -14 C -3 -14 -5 -44 -5 -58 C -4 -65 -11 -72 -8 -78 A 8 8 0 0 0 8 -78 C 11 -72 4 -65 5 -58 C 5 -44 3 -14 0 -14 Z" transform="rotate(150)"/>
+        <path fill="#E07820" d="M 0 -14 C -3 -14 -5 -44 -5 -58 C -4 -65 -11 -72 -8 -78 A 8 8 0 0 0 8 -78 C 11 -72 4 -65 5 -58 C 5 -44 3 -14 0 -14 Z" transform="rotate(180)"/>
+        <path fill="#F0A800" d="M 0 -14 C -3 -14 -5 -44 -5 -58 C -4 -65 -11 -72 -8 -78 A 8 8 0 0 0 8 -78 C 11 -72 4 -65 5 -58 C 5 -44 3 -14 0 -14 Z" transform="rotate(210)"/>
+        <path fill="#C82870" d="M 0 -14 C -3 -14 -5 -44 -5 -58 C -4 -65 -11 -72 -8 -78 A 8 8 0 0 0 8 -78 C 11 -72 4 -65 5 -58 C 5 -44 3 -14 0 -14 Z" transform="rotate(240)"/>
+        <path fill="#E07820" d="M 0 -14 C -3 -14 -5 -44 -5 -58 C -4 -65 -11 -72 -8 -78 A 8 8 0 0 0 8 -78 C 11 -72 4 -65 5 -58 C 5 -44 3 -14 0 -14 Z" transform="rotate(270)"/>
+        <path fill="#F0A800" d="M 0 -14 C -3 -14 -5 -44 -5 -58 C -4 -65 -11 -72 -8 -78 A 8 8 0 0 0 8 -78 C 11 -72 4 -65 5 -58 C 5 -44 3 -14 0 -14 Z" transform="rotate(300)"/>
+        <path fill="#C82870" d="M 0 -14 C -3 -14 -5 -44 -5 -58 C -4 -65 -11 -72 -8 -78 A 8 8 0 0 0 8 -78 C 11 -72 4 -65 5 -58 C 5 -44 3 -14 0 -14 Z" transform="rotate(330)"/>
+        <circle cx="0" cy="0" r="17" fill="#E87820"/>
+      </svg>
+    </span>
+    <span class="brand-word">Inn<span class="o">o</span>99</span>
+  </a>
+
+  <nav class="nav-links" aria-label="Navigazione principale">
+    <a href="#progetto">Il Progetto</a>
+    <a href="#verticali">Verticali</a>
+    <a href="#evento">2 Luglio</a>
+    <a href="#podcast">Podcast</a>
+  </nav>
+
+  <a href="https://www.inno-valley.it" target="_blank" rel="noopener" class="innovalley-nav-logo" aria-label="Innovalley Open Innovation Hub">
+    <svg viewBox="30 -15 160 560" class="iv-emblem-sm" aria-hidden="true">
+      <circle cx="110" cy="95"  r="52" fill="none" stroke="currentColor" stroke-width="20"/>
+      <circle cx="110" cy="197" r="52" fill="none" stroke="currentColor" stroke-width="20"/>
+      <circle cx="110" cy="299" r="52" fill="none" stroke="currentColor" stroke-width="20"/>
+      <circle cx="110" cy="401" r="52" fill="none" stroke="currentColor" stroke-width="20"/>
+      <line x1="110" y1="43" x2="110" y2="16" stroke="currentColor" stroke-width="8"/><circle cx="110" cy="8"  r="11" fill="currentColor"/>
+      <line x1="158" y1="57" x2="186" y2="39" stroke="currentColor" stroke-width="8"/><circle cx="194" cy="33" r="11" fill="currentColor"/>
+      <line x1="58"  y1="197" x2="26" y2="197" stroke="currentColor" stroke-width="8"/><circle cx="17" cy="197" r="11" fill="currentColor"/>
+      <line x1="162" y1="322" x2="190" y2="342" stroke="currentColor" stroke-width="8"/><circle cx="198" cy="350" r="11" fill="currentColor"/>
+      <line x1="58"  y1="378" x2="26"  y2="360" stroke="currentColor" stroke-width="8"/><circle cx="17"  cy="352" r="11" fill="currentColor"/>
+      <line x1="110" y1="453" x2="110" y2="478" stroke="currentColor" stroke-width="8"/>
+      <line x1="72"  y1="478" x2="148" y2="478" stroke="currentColor" stroke-width="8"/>
+      <circle cx="72"  cy="478" r="9" fill="currentColor"/><circle cx="148" cy="478" r="9" fill="currentColor"/>
+      <circle cx="110" cy="510" r="22" fill="#E97B26"/>
+    </svg>
+    <span class="iv-label">inn<span class="iv-o">o</span>valley</span>
+  </a>
+  <a href="https://luma.com/5i7p2k1g" target="_blank" rel="noopener" class="btn btn-sm btn-glow nav-cta">Prenota</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+
+<!-- ====== HERO ====== -->
+<section class="hero" id="top">
+  <canvas id="constellation" aria-hidden="true"></canvas>
+
+  <div class="hero-inner">
+    <div class="eyebrow reveal">
+      <span class="pulse-dot"></span>
+      L'Aquila · Capitale Italiana della Cultura 2026
+    </div>
+
+    <h1 class="hero-title reveal">
+      L'ecosistema dell'<span class="grad">innovazione</span><br/>
+      arriva all'<span class="outline">Aquila</span>
+    </h1>
+
+    <p class="hero-sub reveal">
+      <strong>Inno99</strong> è il programma di <strong>Innovalley</strong> che radica la cultura
+      dell'innovazione nell'ecosistema aquilano e abruzzese. Due verticali,
+      un'unica visione: <em>connettere</em> imprenditori, ricercatori e talenti
+      con chi l'innovazione l'ha già fatta — ad alto livello.
+    </p>
+
+    <p class="hero-tag reveal">"Le idee migliori nascono davanti a un aperitivo."</p>
+
+    <div class="hero-cta reveal">
+      <a href="https://luma.com/5i7p2k1g" target="_blank" rel="noopener" class="btn btn-lg btn-glow">
+        Prenota l'evento del 2 luglio <span class="btn-arrow">→</span>
+      </a>
+      <a href="#progetto" class="btn btn-lg btn-ghost">Scopri il progetto</a>
+    </div>
+
+    <div class="hero-meta reveal">
+      <div><b>2</b> verticali attive</div>
+      <span class="sep"></span>
+      <div><b>6</b> incontri nel 2026</div>
+      <span class="sep"></span>
+      <div><b>1</b> ecosistema vivo</div>
+    </div>
+  </div>
+
+  <a href="#progetto" class="scroll-hint" aria-hidden="true"><span></span>scroll</a>
+</section>
+
+<!-- ====== PROGETTO ====== -->
+<section class="section" id="progetto">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker">Il Progetto</span>
+      <h2>Non un evento. Un <span class="grad">sistema</span> organico di innovazione.</h2>
+      <p class="lead">
+        Con Inno99 portiamo a L'Aquila <strong>Innovalley</strong> — il punto di connessione tra le reti
+        nazionali dell'innovazione e la comunità locale. Verticali tematiche in formato esperienziale,
+        accessibile e ad alto contenuto qualitativo, per costruire un ecosistema in cui idee, storie e
+        visioni si contaminano.
+      </p>
+    </div>
+
+    <div class="feature-grid">
+      <article class="card reveal">
+        <div class="card-ico">
+          <svg viewBox="0 0 24 24"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M12 12 3 7m9 5 9-5m-9 5v10"/></svg>
+        </div>
+        <h3>Contaminazione di idee</h3>
+        <p>Imprenditori, ricercatori, professionisti e curiosi si incontrano con chi ha percorso strade innovative ad alto livello: startup, industria avanzata, ricerca, mercati globali.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-ico">
+          <svg viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg>
+        </div>
+        <h3>Radicamento urbano</h3>
+        <p>I pub e i locali del centro storico diventano spazi di socialità culturale: l'innovazione esce dalle aule e abita la città, informale ma di alto profilo.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-ico">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M2 12h20M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+        </div>
+        <h3>Reti nazionali</h3>
+        <p>Un ponte stabile tra L'Aquila e gli ecosistemi dell'innovazione italiani, dentro la cornice di L'Aquila Capitale Italiana della Cultura 2026.</p>
+      </article>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><span class="num" data-to="6">0</span><span class="lbl">Incontri nel 2026</span></div>
+      <div class="stat"><span class="num" data-to="2">0</span><span class="lbl">Verticali attive</span></div>
+      <div class="stat"><span class="num" data-to="100">0</span><span class="suf">%</span><span class="lbl">Esperienziale</span></div>
+      <div class="stat"><span class="num" data-prefix="lug–dic" data-static="1"></span><span class="lbl">Periodo · 2026</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== VERTICALI ====== -->
+<section class="section section-alt" id="verticali">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker">Le due verticali</span>
+      <h2>Un format <span class="grad">live</span>. Una voce <span class="grad">on demand</span>.</h2>
+    </div>
+
+    <div class="vert-grid">
+      <!-- Inno Talks -->
+      <article class="vert-card reveal">
+        <div class="vert-badge live"><span class="pulse-dot"></span> Attiva ora</div>
+        <div class="vert-emblem">
+          <svg viewBox="0 0 560 560" class="emblem-glass">
+            <g class="glass-strokes" fill="none" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="150" y1="170" x2="410" y2="170"/>
+              <line x1="150" y1="170" x2="280" y2="320"/>
+              <line x1="410" y1="170" x2="280" y2="320"/>
+              <line x1="280" y1="320" x2="280" y2="430"/>
+              <line x1="210" y1="430" x2="350" y2="430"/>
+              <line x1="150" y1="170" x2="92" y2="120"/>
+              <line x1="410" y1="170" x2="468" y2="120"/>
+              <line x1="150" y1="170" x2="110" y2="232"/>
+            </g>
+            <g class="glass-nodes">
+              <circle cx="150" cy="170" r="30"/><circle cx="410" cy="170" r="30"/>
+              <circle cx="280" cy="430" r="20"/><circle cx="92" cy="120" r="20"/>
+              <circle cx="468" cy="120" r="20"/><circle cx="110" cy="232" r="17"/>
+              <circle cx="210" cy="430" r="15"/><circle cx="350" cy="430" r="15"/>
+            </g>
+            <circle cx="280" cy="232" r="40" class="olive"/>
+            <circle cx="318" cy="150" r="11" class="bubble"/>
+            <circle cx="300" cy="100" r="7" class="bubble"/>
+          </svg>
+        </div>
+        <h3>Inno Talks</h3>
+        <p class="vert-kick">Gli Aperitivi dell'Innovazione</p>
+        <p>Seminari-serata in formula aperitivo, in locali selezionati del centro storico. Contenuti di altissimo livello in una cornice conviviale: accoglienza, talk, conversazione guidata, confronto con il pubblico e networking.</p>
+        <ul class="vert-list">
+          <li>Relatori d'eccellenza, nazionali e territoriali</li>
+          <li>Conduzione curatoriale di Mirko Rocci</li>
+          <li>Numero contenuto di partecipanti, qualità del confronto</li>
+        </ul>
+        <a href="#evento" class="link-arrow">Vai al primo evento <span>→</span></a>
+      </article>
+
+      <!-- Inno Podcast -->
+      <article class="vert-card reveal soon">
+        <div class="vert-badge soon-badge">Da settembre 2026</div>
+        <div class="vert-emblem">
+          <svg viewBox="0 0 560 560" class="emblem-mic">
+            <rect x="205" y="120" width="150" height="220" rx="75" class="mic-body"/>
+            <g class="mic-lines" stroke-width="9" stroke-linecap="round">
+              <line x1="232" y1="190" x2="328" y2="190"/>
+              <line x1="232" y1="225" x2="328" y2="225"/>
+              <line x1="232" y1="260" x2="328" y2="260"/>
+            </g>
+            <path class="mic-arc" d="M170 250 a110 110 0 0 0 220 0" fill="none" stroke-width="13" stroke-linecap="round"/>
+            <line x1="280" y1="360" x2="280" y2="430" class="mic-stem" stroke-width="13" stroke-linecap="round"/>
+            <line x1="210" y1="430" x2="350" y2="430" class="mic-base" stroke-width="13" stroke-linecap="round"/>
+            <circle cx="262" cy="158" r="22" class="mic-orange"/>
+            <circle cx="372" cy="150" r="13" class="mic-orange"/>
+            <circle cx="408" cy="115" r="8" class="mic-orange"/>
+          </svg>
+        </div>
+        <h3>Inno Podcast</h3>
+        <p class="vert-kick">Le voci dell'innovazione</p>
+        <p>Ogni speaker ospite intervistato in formato podcast professionale da Mirko Rocci: un dialogo tra pari su scelte coraggiose, fallimenti formativi e intuizioni che cambiano le traiettorie. Un archivio vivo dell'innovazione italiana.</p>
+        <div class="platforms">
+          <span>Spotify</span><span>Apple Podcasts</span><span>YouTube</span>
+        </div>
+        <a href="#podcast" class="link-arrow">Scopri di più <span>→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ====== EVENTO 2 LUGLIO ====== -->
+<section class="section section-event" id="evento">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker">Primo evento · Inno Talks #1</span>
+      <h2>Spazio e innovazione:<br/><span class="grad">un dilemma di sostenibilità</span></h2>
+    </div>
+
+    <div class="event-wrap">
+      <!-- left: poster card -->
+      <div class="event-poster reveal">
+        <div class="poster-top">
+          <div class="poster-badge">Side event del DAAB</div>
+          <span class="brand-word small">Inn<span class="o">o</span>99</span>
+        </div>
+        <h3 class="poster-title">Aperitivi dell'Innovazione</h3>
+        <p class="poster-sub">Spazio e innovazione: un dilemma di sostenibilità</p>
+
+        <div class="poster-speakers">
+          <div class="spk">
+            <span class="spk-role">Presenta</span>
+            <span class="spk-name">Dr. Mirko Rocci</span>
+            <span class="spk-org">Promotore Inno99 · Innovalley</span>
+          </div>
+          <div class="spk">
+            <span class="spk-role">Speaker</span>
+            <span class="spk-name">Ing. Marziale Feudale</span>
+            <span class="spk-org">già CTO team · Thales Alenia Space</span>
+          </div>
+          <div class="spk spk-inst">
+            <span class="spk-role">Saluti istituzionali</span>
+            <span class="spk-name">Roberto Santangelo</span>
+            <span class="spk-org">Assessore alla Cultura · Regione Abruzzo</span>
+          </div>
+        </div>
+
+        <div class="free-drink-tag">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 2h8l1 7H7L8 2Z"/><path d="M7 9c0 5 3 9 5 9s5-4 5-9"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="9" y1="22" x2="15" y2="22"/></svg>
+          <span>Primo drink offerto a chi si iscrive al link</span>
+        </div>
+
+        <div class="poster-info">
+          <div class="pi"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><div><b>2 luglio 2026 · ore 18:30</b><span>L'Aquila</span></div></div>
+          <div class="pi"><svg viewBox="0 0 24 24"><path d="M12 21s7-5.7 7-11a7 7 0 1 0-14 0c0 5.3 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg><div><b>Ju Boss — La Cantina Vini &amp; Spumanti</b><span>Via Castello, 3</span></div></div>
+        </div>
+
+        <a href="https://luma.com/5i7p2k1g" target="_blank" rel="noopener" class="btn btn-glow btn-block">Prenota gratis su Luma <span class="btn-arrow">→</span></a>
+      </div>
+
+      <!-- right: details + countdown -->
+      <div class="event-detail">
+        <div class="countdown reveal" id="countdown" aria-label="Conto alla rovescia">
+          <div class="cd-unit"><span class="cd-num" data-d>00</span><span class="cd-lbl">giorni</span></div>
+          <div class="cd-unit"><span class="cd-num" data-h>00</span><span class="cd-lbl">ore</span></div>
+          <div class="cd-unit"><span class="cd-num" data-m>00</span><span class="cd-lbl">min</span></div>
+          <div class="cd-unit"><span class="cd-num" data-s>00</span><span class="cd-lbl">sec</span></div>
+        </div>
+
+        <p class="event-lead reveal">
+          Il primo appuntamento ha funzione <strong>fondativa e simbolica</strong>: lancia il format
+          Inno Talks, introduce il programma Inno99 e il ruolo di Innovalley, e afferma il valore del
+          dialogo tra innovazione e socialità urbana.
+        </p>
+
+        <div class="event-points">
+          <div class="ep reveal">
+            <span class="ep-dot ep-dot-gold"></span>
+            <div><b>Saluti istituzionali — Roberto Santangelo</b><p>L'Assessore alla Cultura della Regione Abruzzo porta i saluti delle istituzioni al lancio ufficiale del format.</p></div>
+          </div>
+          <div class="ep reveal">
+            <span class="ep-dot ep-dot-orange"></span>
+            <div><b>Primo drink offerto agli iscritti</b><p>Chi si registra tramite il link Luma riceve il primo drink in omaggio — un aperitivo letteralmente offerto dall'innovazione.</p></div>
+          </div>
+          <div class="ep reveal">
+            <span class="ep-dot"></span>
+            <div><b>Lancio Call for Ideas &amp; Solutions</b><p>Nel corso della serata Mirko Rocci lancia ufficialmente le call del Distretto Aerospaziale Abruzzo (DAAB).</p></div>
+          </div>
+          <div class="ep reveal">
+            <span class="ep-dot"></span>
+            <div><b>Concomitanza ESA &amp; ASI</b><p>Stessa giornata dell'incontro istituzionale del Distretto Aerospaziale all'Emiciclo dell'Aquila, alla presenza di ESA e ASI.</p></div>
+          </div>
+          <div class="ep reveal">
+            <span class="ep-dot"></span>
+            <div><b>Spazio &amp; industria avanzata</b><p>Marziale Feudale porta la propria esperienza ai vertici dell'industria aerospaziale: la sostenibilità come dilemma del nuovo spazio.</p></div>
+          </div>
+        </div>
+
+        <div class="event-foot reveal">
+          <div>Sponsor <b>Synergie Italia</b></div>
+          <span class="sep"></span>
+          <div>Organizza <b>Innovalley Open Innovation Hub</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== SPEAKERS ====== -->
+<section class="section section-alt" id="speakers">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker">Il parterre</span>
+      <h2>Voci da mondi ad <span class="grad">alta complessità</span></h2>
+      <p class="lead">Spazio, industria avanzata, ricerca, startup e mercati globali. Una rosa preliminare di ospiti d'eccellenza che dà il tono a Inno99.</p>
+    </div>
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Marziale Feudale</span><span class="m-dot">·</span>
+        <span>Marco Ricci</span><span class="m-dot">·</span>
+        <span>Michele Flamini</span><span class="m-dot">·</span>
+        <span>Paride Vitale</span><span class="m-dot">·</span>
+        <span>Mark Kostabi</span><span class="m-dot">·</span>
+        <span>Vincenzo Di Nicola</span><span class="m-dot">·</span>
+        <span>Claudia Pingue</span><span class="m-dot">·</span>
+        <span>Salvatore Santangelo</span><span class="m-dot">·</span>
+        <span>Marco Gentile</span><span class="m-dot">·</span>
+        <span>Ugo De Ceglie</span><span class="m-dot">·</span>
+        <span>Amedeo Iasci</span><span class="m-dot">·</span>
+        <span>Ernesto Di Giambattista</span><span class="m-dot">·</span>
+      </div>
+    </div>
+    <div class="speaker-grid">
+      <div class="sp-card reveal featured">
+        <span class="sp-tag">2 luglio</span>
+        <h3>Marziale Feudale</h3>
+        <p>Già nel team CTO di <b>Thales Alenia Space</b> — spazio e tecnologie avanzate. Speaker del primo Inno Talks.</p>
+      </div>
+      <div class="sp-card reveal">
+        <h3>Marco Ricci</h3>
+        <p>Esperienza tecnico-ingegneristica nel motorsport (già in Ferrari), oggi con Ferretti Group — industria avanzata.</p>
+      </div>
+      <div class="sp-card reveal">
+        <h3>Michele Flamini</h3>
+        <p>Gran Sasso Science Institute (GSSI) — ricerca e scienze avanzate.</p>
+      </div>
+    </div>
+    <p class="note reveal">Rosa preliminare in via di definizione · ospiti coinvolti per pertinenza tematica, disponibilità e capacità attrattiva.</p>
+  </div>
+</section>
+
+<!-- ====== PODCAST ====== -->
+<section class="section section-podcast" id="podcast">
+  <div class="container podcast-wrap">
+    <div class="podcast-text reveal">
+      <span class="kicker">Inno Podcast</span>
+      <h2>Le conversazioni continuano,<br/><span class="grad">ovunque tu sia</span></h2>
+      <p>Da settembre 2026, ogni speaker degli Inno Talks viene intervistato in formato podcast professionale. Non un giornalista esterno, ma <strong>Mirko Rocci</strong> — un protagonista dello stesso ecosistema: un dialogo tra pari, più ricco e credibile.</p>
+      <p class="podcast-sub">Pubblicato su tutte le principali piattaforme digitali, per portare L'Aquila e Innovalley sulla mappa degli ecosistemi dell'innovazione.</p>
+      <div class="platforms big">
+        <span>Spotify</span><span>Apple Podcasts</span><span>YouTube</span><span>&amp; altre</span>
+      </div>
+    </div>
+    <div class="podcast-visual reveal" aria-hidden="true">
+      <div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== CTA / PARTNER ====== -->
+<section class="section section-cta" id="contatti">
+  <div class="container">
+    <div class="cta-box reveal">
+      <h2>Ci vediamo all'<span class="grad">aperitivo</span>.</h2>
+      <p>Il primo incontro è gratuito e a posti limitati. Prenota ora e fai parte dell'ecosistema dell'innovazione aquilano.</p>
+      <a href="https://luma.com/5i7p2k1g" target="_blank" rel="noopener" class="btn btn-lg btn-glow">Prenota il 2 luglio <span class="btn-arrow">→</span></a>
+      <div class="cta-contacts">
+        <a href="tel:+393288295361">328 82 95 361</a>
+        <span class="sep"></span>
+        <a href="mailto:eventi@inno-valley.it">eventi@inno-valley.it</a>
+      </div>
+    </div>
+
+    <div class="partners reveal">
+      <span class="partners-lbl">Promosso e sostenuto da</span>
+      <div class="partners-row">
+        <span class="p-logo">Innovalley</span>
+        <span class="p-logo">Synergie Italia</span>
+        <span class="p-logo">DAAB · Distretto Aerospaziale Abruzzo</span>
+        <span class="p-logo">L'Aquila Capitale Cultura 2026</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-word">Inn<span class="o">o</span>99</span>
+      <p>L'ecosistema dell'innovazione all'Aquila. Un progetto promosso da Innovalley Cube Srl nel quadro di L'Aquila Capitale Italiana della Cultura 2026.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Naviga</h4>
+      <a href="#progetto">Il Progetto</a>
+      <a href="#verticali">Le verticali</a>
+      <a href="#evento">Primo evento</a>
+      <a href="#podcast">Inno Podcast</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contatti</h4>
+      <a href="tel:+393288295361">328 82 95 361</a>
+      <a href="mailto:eventi@inno-valley.it">eventi@inno-valley.it</a>
+      <a href="https://www.inno-valley.it" target="_blank" rel="noopener">inno-valley.it</a>
+      <a href="https://luma.com/5i7p2k1g" target="_blank" rel="noopener">Prenota su Luma</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Inno99 · Innovalley Cube Srl &amp; Associazione Innovalley — P.IVA 02176300693</span>
+    <span>inno99.it</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
