@@ -99,30 +99,25 @@
   }
 
   /* ---------- COUNTDOWN to 24 September 2026, 18:30 ---------- */
-  const cd = document.getElementById("countdown");
-  if (cd) {
+  const clocks = document.querySelectorAll("#countdown, [data-countdown]");
+  if (clocks.length) {
     const target = new Date("2026-09-24T18:30:00").getTime();
-    const elD = cd.querySelector("[data-d]");
-    const elH = cd.querySelector("[data-h]");
-    const elM = cd.querySelector("[data-m]");
-    const elS = cd.querySelector("[data-s]");
     const pad = (n) => String(n).padStart(2, "0");
     const tick = () => {
       let diff = target - Date.now();
-      if (diff <= 0) {
-        elD.textContent = elH.textContent = elM.textContent = elS.textContent = "00";
-        cd.classList.add("live-now");
-        return false;
-      }
-      const d = Math.floor(diff / 86400000); diff -= d * 86400000;
-      const h = Math.floor(diff / 3600000);  diff -= h * 3600000;
-      const m = Math.floor(diff / 60000);     diff -= m * 60000;
-      const s = Math.floor(diff / 1000);
-      elD.textContent = pad(d);
-      elH.textContent = pad(h);
-      elM.textContent = pad(m);
-      elS.textContent = pad(s);
-      return true;
+      const over = diff <= 0;
+      const d = over ? 0 : Math.floor(diff / 86400000); if (!over) diff -= d * 86400000;
+      const h = over ? 0 : Math.floor(diff / 3600000);  if (!over) diff -= h * 3600000;
+      const m = over ? 0 : Math.floor(diff / 60000);    if (!over) diff -= m * 60000;
+      const s = over ? 0 : Math.floor(diff / 1000);
+      clocks.forEach((cd) => {
+        cd.querySelector("[data-d]").textContent = pad(d);
+        cd.querySelector("[data-h]").textContent = pad(h);
+        cd.querySelector("[data-m]").textContent = pad(m);
+        cd.querySelector("[data-s]").textContent = pad(s);
+        if (over) cd.classList.add("live-now");
+      });
+      return !over;
     };
     if (tick()) setInterval(tick, 1000);
   }
