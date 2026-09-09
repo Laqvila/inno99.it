@@ -383,6 +383,39 @@ section{position:relative}
 .press-date{color:var(--muted-2);font-size:.83rem}
 .press-card .link-arrow{margin-top:auto}
 
+/* ---------- prossimo evento (24 settembre) ---------- */
+.next-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:34px;align-items:start}
+.next-when{display:flex;flex-direction:column;gap:22px}
+.next-when .poster-info{margin-bottom:0}
+.next-note{
+  display:flex;gap:12px;align-items:flex-start;
+  background:linear-gradient(135deg,rgba(59,125,224,.1),rgba(43,182,168,.08));
+  border:1px solid rgba(59,125,224,.28);border-radius:14px;padding:16px 18px;
+  color:var(--muted);font-size:.92rem;line-height:1.5;
+}
+.next-note svg{width:20px;height:20px;flex:none;stroke:var(--teal);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
+.next-note b{color:var(--text)}
+
+.lineup{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:30px}
+.lineup-title{
+  font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;
+  color:var(--muted-2);font-weight:600;margin-bottom:20px;font-family:var(--font-b);
+}
+.lu{padding:16px 0;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:3px}
+.lu-role{font-size:.71rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-2);font-weight:600}
+.lu-name{font-family:var(--font-d);font-weight:600;font-size:1.14rem;line-height:1.25}
+.lu-org{color:var(--muted);font-size:.87rem}
+.lu.keynote{
+  background:linear-gradient(135deg,rgba(242,147,63,.13),rgba(194,65,143,.08));
+  border:1px solid rgba(242,147,63,.34);border-radius:14px;
+  padding:20px 22px;margin-bottom:6px;
+}
+.lu.keynote .lu-role{color:var(--orange)}
+.lu.keynote .lu-name{font-size:1.34rem}
+.lu.keynote + .lu{border-top:0}
+.link-inline{color:var(--orange);font-weight:600;white-space:nowrap}
+.link-inline:hover{text-decoration:underline}
+
 /* press photos */
 .press-photo{
   margin:-28px -28px 6px;border-radius:var(--r) var(--r) 0 0;overflow:hidden;
@@ -518,7 +551,8 @@ section{position:relative}
   .nav.open .nav-toggle span:nth-child(2){opacity:0}
   .nav.open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
   .section{padding:80px 0}
-  .feature-grid,.speaker-grid,.press-grid,.featured-press{grid-template-columns:1fr}
+  .feature-grid,.speaker-grid,.press-grid,.featured-press,.next-grid{grid-template-columns:1fr}
+  .lineup{padding:22px}
   .poster-speakers{grid-template-columns:1fr}
   .countdown{gap:8px}
   .cd-unit{padding:16px 4px}

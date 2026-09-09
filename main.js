@@ -98,10 +98,10 @@
     });
   }
 
-  /* ---------- COUNTDOWN to 2 July 2026, 18:30 ---------- */
+  /* ---------- COUNTDOWN to 24 September 2026, 18:30 ---------- */
   const cd = document.getElementById("countdown");
   if (cd) {
-    const target = new Date("2026-07-02T18:30:00").getTime();
+    const target = new Date("2026-09-24T18:30:00").getTime();
     const elD = cd.querySelector("[data-d]");
     const elH = cd.querySelector("[data-h]");
     const elM = cd.querySelector("[data-m]");
