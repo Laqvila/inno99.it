@@ -3,6 +3,12 @@
    ============================================================ */
 (function () {
   "use strict";
+  // Riserva: se la pagina arriva in http (Cloudflare senza "Always Use HTTPS"),
+  // passa alla versione https, così esiste un solo indirizzo per motori e utenti.
+  if (location.protocol === "http:" && /\.(com|it)$/.test(location.hostname)) {
+    location.replace("https://" + location.host + location.pathname + location.search + location.hash);
+    return;
+  }
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ---------- NAV: scroll state + mobile toggle ---------- */
