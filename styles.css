@@ -416,6 +416,15 @@ section{position:relative}
 }
 .he-press:hover{color:var(--orange-lt)}
 
+.he-map{display:inline-block;margin-top:6px;color:var(--orange-lt);font-weight:600;font-size:.86rem}
+.he-map:hover{text-decoration:underline}
+
+/* mappa del locale */
+.venue-map{margin:4px 0 22px;border:1px solid var(--line-2);border-radius:14px;overflow:hidden;background:var(--panel)}
+.venue-map iframe{display:block;width:100%;height:220px;border:0;filter:grayscale(.35) contrast(1.05)}
+.venue-map a{display:block;padding:10px 14px;font-size:.86rem;font-weight:600;color:var(--orange-lt);border-top:1px solid var(--line)}
+.venue-map a:hover{background:rgba(242,147,63,.08)}
+
 /* ---------- prossimo evento (24 settembre) ---------- */
 .next-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:34px;align-items:start}
 .next-when{display:flex;flex-direction:column;gap:22px}
