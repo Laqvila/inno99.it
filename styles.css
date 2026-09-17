@@ -634,3 +634,13 @@ section{position:relative}
 .faq summary::after{content:"+";flex:none;font-size:1.5rem;line-height:1;color:#ED7D2B;transition:transform .25s}
 .faq[open] summary::after{transform:rotate(45deg)}
 .faq p{margin:0 0 1.2rem;line-height:1.75;opacity:.85;max-width:72ch}
+
+/* saluti istituzionali, in ordine */
+.greet-list{list-style:none;counter-reset:greet;margin:10px 0 0;padding:0;display:flex;flex-direction:column;gap:14px}
+.greet-list li{counter-increment:greet;position:relative;padding-left:40px;display:flex;flex-direction:column;gap:3px}
+.greet-list li::before{
+  content:counter(greet);position:absolute;left:0;top:1px;
+  width:26px;height:26px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-d);font-weight:700;font-size:.85rem;color:#fff;background:var(--grad);
+}
