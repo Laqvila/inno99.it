@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+# Endpoint interni di Cloudflare (es. /cdn-cgi/l/email-protection): non vanno scansionati
+Disallow: /cdn-cgi/
 
 Sitemap: https://inno99.it/sitemap.xml
