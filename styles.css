@@ -452,8 +452,23 @@ section{position:relative}
   border:1px solid rgba(242,147,63,.34);border-radius:14px;
   padding:20px 22px;margin-bottom:6px;
 }
+.lu.keynote{flex-direction:row;align-items:center;gap:18px}
+.lu-text{display:flex;flex-direction:column;gap:3px;min-width:0}
+.lu-photo{
+  width:92px;height:92px;flex:none;border-radius:50%;object-fit:cover;
+  border:2px solid rgba(242,147,63,.7);box-shadow:0 0 0 5px rgba(242,147,63,.12);
+}
 .lu.keynote .lu-role{color:var(--orange)}
 .lu.keynote .lu-name{font-size:1.34rem}
+/* loghi delle imprese */
+.lu-logos{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.lu-logo{background:#fff;border-radius:10px;padding:8px 14px;display:inline-flex;align-items:center}
+.lu-logo img{height:30px;width:auto;display:block}
+.lu-logo img.logo-tall{height:44px}
+.lu-logo-text{font-family:var(--font-d);font-weight:700;letter-spacing:.08em;color:#1b2a4a;font-size:.95rem}
+/* foto keynote nella card in cima */
+.he-keynote{display:flex;align-items:center;gap:14px}
+.he-photo{width:58px;height:58px;flex:none;border-radius:50%;object-fit:cover;border:2px solid rgba(242,147,63,.7)}
 .lu.keynote + .lu{border-top:0}
 .link-inline{color:var(--orange);font-weight:600;white-space:nowrap}
 .link-inline:hover{text-decoration:underline}
