@@ -644,3 +644,19 @@ section{position:relative}
   display:flex;align-items:center;justify-content:center;
   font-family:var(--font-d);font-weight:700;font-size:.85rem;color:#fff;background:var(--grad);
 }
+
+/* programma della serata (senza orari) */
+.program{margin-top:34px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:28px 30px}
+.program-list{list-style:none;counter-reset:prog;margin:14px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:14px 34px}
+.program-list li{counter-increment:prog;position:relative;padding:4px 0 4px 44px;display:flex;flex-direction:column;gap:3px}
+.program-list li::before{
+  content:counter(prog);position:absolute;left:0;top:3px;width:30px;height:30px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-d);font-weight:700;font-size:.9rem;
+  color:var(--orange-lt);border:1px solid rgba(242,147,63,.45);background:rgba(242,147,63,.08);
+}
+.program-list li b{font-family:var(--font-d);font-weight:600;font-size:1.02rem}
+.program-list li span{color:var(--muted);font-size:.88rem;line-height:1.45}
+.program-list li.is-key::before{background:var(--grad);color:#fff;border-color:transparent}
+.program-list li.is-key b{color:var(--orange-lt)}
+@media(max-width:760px){.program{padding:22px}.program-list{grid-template-columns:1fr}}
