@@ -695,3 +695,9 @@ section{position:relative}
   .car-slide{aspect-ratio:4/3}
   .car-btn{width:36px;height:36px;font-size:1.3rem}
 }
+
+/* saluti istituzionali: foto e loghi */
+.greet-list li{flex-direction:row;align-items:flex-start;gap:14px}
+.greet-photo{width:60px;height:60px;flex:none;border-radius:50%;object-fit:cover;border:2px solid rgba(242,147,63,.55)}
+.greet-text{display:flex;flex-direction:column;gap:3px;min-width:0}
+.lu-logo img.logo-xtall{height:58px}
