@@ -209,4 +209,55 @@
     heroIO.observe(canvas);
     start();
   }
+
+  /* ---------- CAROUSEL (il locale) ---------- */
+  document.querySelectorAll("[data-carousel]").forEach((car) => {
+    const track = car.querySelector(".car-track");
+    const slides = [...track.children];
+    const dotsBox = car.querySelector(".car-dots");
+    let current = 0, timer = null;
+
+    const dots = slides.map((_, i) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.setAttribute("role", "tab");
+      b.setAttribute("aria-label", "Foto " + (i + 1) + " di " + slides.length);
+      b.addEventListener("click", () => { go(i); stop(); });
+      dotsBox.appendChild(b);
+      return b;
+    });
+
+    const mark = (i) => {
+      current = i;
+      dots.forEach((d, k) => d.setAttribute("aria-selected", k === i ? "true" : "false"));
+    };
+    const go = (i) => {
+      const n = (i + slides.length) % slides.length;
+      track.scrollTo({ left: slides[n].offsetLeft, behavior: reduce ? "auto" : "smooth" });
+      mark(n);
+    };
+    const stop = () => { clearInterval(timer); timer = null; };
+    const play = () => { if (!reduce && !timer) timer = setInterval(() => go(current + 1), 5000); };
+
+    car.querySelector(".car-prev").addEventListener("click", () => { go(current - 1); stop(); });
+    car.querySelector(".car-next").addEventListener("click", () => { go(current + 1); stop(); });
+    track.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowRight") { go(current + 1); stop(); }
+      if (e.key === "ArrowLeft") { go(current - 1); stop(); }
+    });
+
+    // aggiorna il pallino quando si scorre col dito
+    let raf = null;
+    track.addEventListener("scroll", () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => mark(Math.round(track.scrollLeft / track.clientWidth)));
+    }, { passive: true });
+    track.addEventListener("pointerdown", stop, { passive: true });
+    car.addEventListener("mouseenter", stop);
+    car.addEventListener("focusin", stop);
+
+    // avanza da solo solo quando è visibile
+    new IntersectionObserver((es) => es.forEach((e) => (e.isIntersecting ? play() : stop())), { threshold: 0.4 }).observe(car);
+    mark(0);
+  });
 })();

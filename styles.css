@@ -660,3 +660,38 @@ section{position:relative}
 .program-list li.is-key::before{background:var(--grad);color:#fff;border-color:transparent}
 .program-list li.is-key b{color:var(--orange-lt)}
 @media(max-width:760px){.program{padding:22px}.program-list{grid-template-columns:1fr}}
+
+/* ---------- il locale: carosello ---------- */
+.venue{margin-top:34px;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:34px;align-items:center}
+.venue-head h3{font-size:clamp(1.5rem,2.6vw,2rem);margin:10px 0 12px}
+.venue-head p{color:var(--muted);font-size:1rem;line-height:1.6}
+.carousel{position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--line-2);background:var(--panel);box-shadow:0 22px 60px rgba(0,0,0,.45)}
+.car-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;outline:none}
+.car-track::-webkit-scrollbar{display:none}
+.car-slide{flex:0 0 100%;scroll-snap-align:start;position:relative;aspect-ratio:16/10;margin:0}
+.car-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.car-slide img.pos-38{object-position:50% 38%}
+.car-slide img.pos-62{object-position:50% 62%}
+.car-slide figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:48px 22px 42px;
+  background:linear-gradient(0deg,rgba(8,10,15,.88),rgba(8,10,15,.55) 55%,transparent);
+  display:flex;flex-direction:column;gap:4px;
+}
+.car-slide figcaption b{font-family:var(--font-d);font-size:1.15rem;color:#fff}
+.car-slide figcaption span{color:#d7dce6;font-size:.9rem}
+.car-btn{
+  position:absolute;top:42%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;
+  border:1px solid rgba(255,255,255,.25);background:rgba(10,13,19,.55);backdrop-filter:blur(6px);
+  color:#fff;font-size:1.6rem;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;
+  transition:background .25s,border-color .25s;
+}
+.car-btn:hover,.car-btn:focus-visible{background:var(--orange);border-color:var(--orange)}
+.car-prev{left:12px}.car-next{right:12px}
+.car-dots{position:absolute;left:0;right:0;bottom:14px;display:flex;justify-content:center;gap:8px}
+.car-dots button{width:9px;height:9px;padding:0;border-radius:50%;border:0;background:rgba(255,255,255,.4);cursor:pointer;transition:width .3s var(--ease),background .3s}
+.car-dots button[aria-selected="true"]{width:24px;border-radius:5px;background:var(--orange)}
+@media(max-width:760px){
+  .venue{grid-template-columns:1fr;gap:20px}
+  .car-slide{aspect-ratio:4/3}
+  .car-btn{width:36px;height:36px;font-size:1.3rem}
+}
