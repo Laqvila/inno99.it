@@ -704,3 +704,20 @@ section{position:relative}
 
 /* conduttore con foto */
 .lu.lu-host{flex-direction:row;align-items:center;gap:14px}
+
+/* ===== Inno Talks #2: sottotitolo, Tecnopolo e imprese, locandina ===== */
+.he-sub{margin:-4px 0 14px;color:var(--orange-lt);font-family:var(--font-d);font-weight:500;font-size:.98rem;line-height:1.35}
+.sec-sub{margin-top:14px;color:var(--orange-lt);font-family:var(--font-d);font-weight:500;font-size:clamp(1.05rem,2vw,1.3rem);line-height:1.35}
+.lu-note{color:var(--muted);font-size:.85rem;line-height:1.5;margin:4px 0 0}
+.tecno-host{display:flex;align-items:flex-start;gap:14px;margin-top:10px}
+.co-list{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.co-card{border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:3px;background:rgba(255,255,255,.025)}
+.co-card .lu-logos{margin:0 0 8px}
+.flyer{margin-top:34px;display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:34px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:28px 30px}
+.flyer-img{display:block;border-radius:14px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.45);transition:transform .3s ease}
+.flyer-img:hover{transform:translateY(-4px)}
+.flyer-img img{display:block;width:100%;height:auto}
+.flyer-text h3{font-size:clamp(1.4rem,2.6vw,1.9rem);margin:10px 0 12px}
+.flyer-text p{color:var(--muted);line-height:1.6;margin:0 0 12px}
+.flyer-text .btn{margin-top:8px}
+@media(max-width:760px){.flyer{grid-template-columns:1fr;padding:22px;gap:22px}.flyer-img{max-width:380px;margin:0 auto}}
