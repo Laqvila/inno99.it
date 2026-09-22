@@ -721,3 +721,5 @@ section{position:relative}
 .flyer-text p{color:var(--muted);line-height:1.6;margin:0 0 12px}
 .flyer-text .btn{margin-top:8px}
 @media(max-width:760px){.flyer{grid-template-columns:1fr;padding:22px;gap:22px}.flyer-img{max-width:380px;margin:0 auto}}
+.press-group{font-family:var(--font-d);font-size:1.02rem;font-weight:600;letter-spacing:.02em;color:var(--orange-lt);text-transform:uppercase;margin:0 0 18px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.press-grid + .press-group{margin-top:44px}
