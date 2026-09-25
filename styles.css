@@ -741,3 +741,10 @@ section{position:relative}
 .he-video:hover img{transform:scale(1.04)}
 .he-video-play{position:absolute;left:50%;top:50%;width:54px;height:54px;margin:-27px 0 0 -27px;border-radius:50%;background:linear-gradient(135deg,#ED7D2B,#E0691F);box-shadow:0 8px 24px rgba(237,125,43,.5)}
 .he-video-play::after{content:"";position:absolute;left:21px;top:16px;border-left:16px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent}
+/* galleria Inno Talks #2: foto intere, anche verticali */
+.gallery{margin:0 0 34px;grid-template-columns:1fr;gap:18px}
+.gallery .carousel{width:100%;max-width:960px;margin:0 auto}
+.gallery .car-slide{aspect-ratio:3/2;background:#07090d}
+.gallery .car-slide img{object-fit:contain}
+@media(max-width:760px){.gallery .car-slide{aspect-ratio:4/5}}
+.gallery .venue-head{text-align:center}
