@@ -723,3 +723,21 @@ section{position:relative}
 @media(max-width:760px){.flyer{grid-template-columns:1fr;padding:22px;gap:22px}.flyer-img{max-width:380px;margin:0 auto}}
 .press-group{font-family:var(--font-d);font-size:1.02rem;font-weight:600;letter-spacing:.02em;color:var(--orange-lt);text-transform:uppercase;margin:0 0 18px;padding-bottom:10px;border-bottom:1px solid var(--line)}
 .press-grid + .press-group{margin-top:44px}
+
+/* ===== Inno Talks #2: com'è andata, diretta e racconto ===== */
+.talk-video{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(0,1fr);gap:30px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:26px;margin-bottom:34px;scroll-margin-top:90px}
+.tv-text h3{font-size:clamp(1.35rem,2.4vw,1.8rem);margin:10px 0 12px}
+.tv-text p{color:var(--muted);line-height:1.6;margin:0 0 12px}
+.tv-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+@media(max-width:860px){.talk-video{grid-template-columns:1fr;padding:16px;gap:20px}}
+.recap p{color:var(--muted);line-height:1.7;margin:0}
+.recap p b{color:var(--text)}
+.recap blockquote{margin:0;padding:6px 0 6px 18px;border-left:3px solid var(--orange);font-style:italic;color:var(--text);line-height:1.6}
+.recap blockquote cite{display:block;margin-top:6px;font-style:normal;font-size:.85rem;color:var(--muted-2)}
+.recap .link-arrow{align-self:flex-start}
+.greet-initials{display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-weight:700;font-size:1.02rem;color:#fff;background:linear-gradient(135deg,#2c3446,#1a2030)}
+.he-video{position:relative;display:block;border-radius:12px;overflow:hidden;aspect-ratio:16/9;border:1px solid var(--line)}
+.he-video img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.he-video:hover img{transform:scale(1.04)}
+.he-video-play{position:absolute;left:50%;top:50%;width:54px;height:54px;margin:-27px 0 0 -27px;border-radius:50%;background:linear-gradient(135deg,#ED7D2B,#E0691F);box-shadow:0 8px 24px rgba(237,125,43,.5)}
+.he-video-play::after{content:"";position:absolute;left:21px;top:16px;border-left:16px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent}
