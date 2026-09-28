@@ -1,3 +1,4 @@
 # GitHub Pages: file del repo da NON pubblicare sul sito
 exclude:
   - CLAUDE.md
+  - tools

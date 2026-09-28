@@ -1,0 +1,56 @@
+<!--
+{
+  "out": "rassegna-stampa/index.html",
+  "path": "/rassegna-stampa/",
+  "nav": "stampa",
+  "priorita": 0.7,
+  "title": "Rassegna stampa · Inno99 sui giornali | Inno99",
+  "description": "Articoli, interviste e pagine di giornale dedicate agli Inno Talks di Inno99 all'Aquila, dal debutto di luglio 2026 a oggi. Il Centro, AbruzzoWeb, L'Aquila Blog, Rete8 e altre testate.",
+  "og_image": "/img/stampa/il-centro-28-settembre.jpg",
+  "og_w": 1600,
+  "og_h": 1132,
+  "og_alt": "L'articolo del Centro del 28 settembre 2026 su Inno Talks #2",
+  "crumbs": [["Rassegna stampa", null]],
+  "jsonld": [
+    { "@type": "CollectionPage", "name": "Rassegna stampa · Inno99", "url": "https://inno99.it/rassegna-stampa/", "inLanguage": "it-IT" }
+  ]
+}
+-->
+<section class="page-hero">
+  <div class="ph-deco" aria-hidden="true">{{burst}}</div>
+  <div class="container">
+    {{crumbs}}
+    <span class="kicker">Rassegna stampa</span>
+    <h1>La stampa racconta <span class="grad">Inno99</span></h1>
+    <p class="ph-lead">Articoli, interviste e pagine di giornale dedicate agli Aperitivi dell'Innovazione, dal debutto di luglio a oggi.</p>
+    <div class="ph-meta">
+      <span class="chip-info hot">{{icona n=documento}} {{conta cosa=uscite}} uscite</span>
+      <span class="chip-info">{{icona n=rete}} {{conta cosa=testate}} testate</span>
+      <span class="chip-info">{{icona n=calendario}} {{conta cosa=serate}} serate raccontate</span>
+    </div>
+  </div>
+</section>
+
+<section class="section flush-top">
+  <div class="container">
+    {{testate}}
+    {{stampa tutte=1}}
+  </div>
+</section>
+
+<section class="section section-alt tight">
+  <div class="container">
+    <div class="kit reveal">
+      <div>
+        <span class="kicker">Per giornalisti e redazioni</span>
+        <h2>Materiali e contatti</h2>
+        <p>Per interviste, foto e aggiornamenti sugli appuntamenti scrivi a <a class="link-inline" href="mailto:eventi@inno-valley.it">eventi@inno-valley.it</a> o chiama il <a class="link-inline" href="tel:+393288295361">328 82 95 361</a>.</p>
+      </div>
+      <ul class="kit-list">
+        <li><a href="/docs/Inno99_InnoTalks2_resoconto_24settembre2026.pdf" target="_blank" rel="noopener">{{icona n=documento}}<span><b>Resoconto di Inno Talks #2</b><small>PDF · tutti gli interventi del 24 settembre</small></span></a></li>
+        <li><a href="/img/inno-talks-2-locandina.webp" download="Inno99_InnoTalks2_locandina.webp">{{icona n=stella}}<span><b>Locandina di Inno Talks #2</b><small>Immagine · Dalla ricerca al prodotto</small></span></a></li>
+        <li><a href="/inno-talks/2/#diretta">{{icona n=play}}<span><b>La diretta integrale</b><small>Video · 85 minuti</small></span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,3 @@
+/* Senza JavaScript i contenuti restano visibili, senza animazioni di comparsa. */
+.reveal{opacity:1!important;transform:none!important}
+.drawer{display:none}

@@ -3,9 +3,56 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://inno99.it/</loc>
-    <lastmod>2026-09-15</lastmod>
-    <image:image>
-      <image:loc>https://inno99.it/img/inno99-debutto-laquilablog.jpg</image:loc>
-    </image:image>
+    <lastmod>2026-09-28</lastmod>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://inno99.it/img/inno-talks-2/sala.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://inno99.it/inno-talks/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://inno99.it/img/inno-talks-2/sala.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://inno99.it/inno-talks/2/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://inno99.it/img/inno-talks-2/sala.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://inno99.it/chi-siamo/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://inno99.it/img/inno-talks-2/pubblico.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://inno99.it/inno-talks/1/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://inno99.it/img/inno99-debutto-laquilablog.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://inno99.it/inno-talks/3/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://inno99.it/img/inno-talks-2/pubblico.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://inno99.it/inno-podcast/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://inno99.it/img/inno-talks-2/verticali.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://inno99.it/rassegna-stampa/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://inno99.it/img/stampa/il-centro-28-settembre.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://inno99.it/contatti/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://inno99.it/img/inno-talks-2/ingresso-roll-up.jpg</image:loc></image:image>
   </url>
 </urlset>

@@ -1,0 +1,181 @@
+<!--
+{
+  "out": "index.html",
+  "path": "/",
+  "nav": "home",
+  "priorita": 1.0,
+  "player": true,
+  "title": "Inno99 · L'ecosistema dell'innovazione all'Aquila",
+  "description": "Inno99 porta la cultura dell'innovazione nei locali del centro storico dell'Aquila con gli Inno Talks, gli Aperitivi dell'Innovazione, e con Inno Podcast. Un programma Innovalley per L'Aquila Capitale Italiana della Cultura 2026.",
+  "og_description": "Gli Aperitivi dell'Innovazione nei locali del centro storico dell'Aquila. Rivedi Inno Talks #2 e scopri il prossimo appuntamento, in preparazione per ottobre 2026.",
+  "og_image": "/img/inno-talks-2/sala.jpg",
+  "og_w": 1600,
+  "og_h": 900,
+  "og_alt": "La sala dell'Irish Pub Via Verdi piena di pubblico durante Inno Talks #2, 24 settembre 2026",
+  "jsonld": [
+    {
+      "@type": "WebSite",
+      "@id": "https://inno99.it/#website",
+      "url": "https://inno99.it/",
+      "name": "Inno99",
+      "description": "Inno99 è il programma di Innovalley che radica la cultura dell'innovazione nell'ecosistema aquilano e abruzzese, con gli Inno Talks e Inno Podcast.",
+      "inLanguage": "it-IT",
+      "publisher": { "@id": "https://inno99.it/#innovalley" }
+    }
+  ]
+}
+-->
+<section class="hero" id="top">
+  <canvas id="constellation" aria-hidden="true"></canvas>
+  <div class="hero-burst" aria-hidden="true">{{burst}}</div>
+  <div class="hero-inner">
+    <a class="hero-next" href="/inno-talks/3/"><span class="pulse-dot"></span><span><b>Inno Talks #3</b> · ottobre 2026 · in preparazione</span><span class="arr" aria-hidden="true">→</span></a>
+    <h1 class="hero-title"><span class="w">L'ecosistema</span> <span class="w">dell'<span class="grad">innovazione</span></span><br /><span class="w">arriva</span> <span class="w">all'<span class="outline">Aquila</span></span></h1>
+    <p class="hero-sub"><strong>Inno99</strong> è il programma di <strong>Innovalley</strong> che porta la cultura dell'innovazione nei locali del centro storico dell'Aquila, con ospiti d'eccellenza, conversazioni aperte e una città che ha voglia di futuro.</p>
+    <p class="hero-tag">«Le idee migliori nascono davanti a un aperitivo»</p>
+    <div class="hero-cta">
+      <a class="btn btn-lg btn-glow" href="/inno-talks/">Scopri gli appuntamenti <span class="btn-arrow">→</span></a>
+      <a class="btn btn-lg btn-ghost" href="#rivedi">{{icona n=play}} Rivedi l'ultima serata</a>
+    </div>
+    <div class="hero-meta">
+      <span class="chip-info">{{icona n=citta}} L'Aquila Capitale Italiana della Cultura 2026</span>
+      <span class="chip-info">{{icona n=stella}} Sponsor unico Synergie Italia</span>
+    </div>
+  </div>
+  <a href="#appuntamenti" class="scroll-hint" aria-label="Vai agli appuntamenti"><span></span>scorri</a>
+</section>
+
+<section class="section" id="appuntamenti">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker">Gli appuntamenti</span>
+      <h2>Il calendario degli <span class="grad">Inno Talks</span></h2>
+      <p class="lead">Una serata alla volta, nei locali del centro storico. Da luglio a dicembre 2026 gli Aperitivi dell'Innovazione mettono nella stessa sala ricerca, impresa e città.</p>
+    </div>
+    {{appuntamenti}}
+    <div class="sec-foot"><a class="link-arrow" href="/inno-talks/">Com'è fatta una serata <span>→</span></a></div>
+  </div>
+</section>
+
+<section class="section section-alt" id="rivedi">
+  <div class="container">
+    <div class="talk-video reveal">
+      <div class="tv-player">
+        <div class="hls-player" data-hls="/video/inno-talks-2/index.m3u8">
+          <video playsinline preload="none" poster="/video/inno-talks-2/poster.jpg" title="Inno Talks #2 · Dalla ricerca al prodotto · La diretta"></video>
+          <button type="button" class="hls-play" aria-label="Guarda la diretta di Inno Talks #2"><span class="hls-play-icon"></span><span class="hls-play-label">Guarda la diretta</span></button>
+          <p class="hls-err">Il video non si carica su questo browser. <a href="/video/inno-talks-2/" target="_blank" rel="noopener">Aprilo in una nuova scheda</a></p>
+        </div>
+      </div>
+      <div class="tv-text">
+        <span class="kicker">La diretta integrale</span>
+        <h2>Rivedi Inno Talks #2</h2>
+        <p>«Dalla ricerca al prodotto». Il keynote del prof. Michele Flammini, le storie di West Aquila e Accyourate Group e il dialogo con il pubblico, nella serata condotta da Mirko Rocci.</p>
+        <ul class="tv-facts">
+          <li><b>24 settembre</b><span>Irish Pub Via Verdi</span></li>
+          <li><b>85 minuti</b><span>di registrazione</span></li>
+        </ul>
+        <div class="tv-actions">
+          <a class="btn btn-glow" href="/inno-talks/2/">La pagina della serata <span class="btn-arrow">→</span></a>
+          <a class="btn btn-ghost" href="/docs/Inno99_InnoTalks2_resoconto_24settembre2026.pdf" target="_blank" rel="noopener">{{icona n=documento}} Resoconto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section tight">
+  <div class="container">
+    {{numeri}}
+  </div>
+</section>
+
+<section class="section" id="verticali">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker">Le due verticali</span>
+      <h2>Un format <span class="grad">dal vivo</span>, una voce <span class="grad">da ascoltare</span></h2>
+    </div>
+    <div class="vert-grid" data-stagger>
+      <article class="vert-card reveal">
+        <span class="vert-badge live"><span class="pulse-dot"></span> Attivo</span>
+        <div class="vert-emblem">
+          <svg viewBox="0 0 560 560" class="emblem-glass" aria-hidden="true">
+            <g class="glass-strokes" fill="none" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="150" y1="170" x2="410" y2="170"/><line x1="150" y1="170" x2="280" y2="320"/><line x1="410" y1="170" x2="280" y2="320"/><line x1="280" y1="320" x2="280" y2="430"/><line x1="210" y1="430" x2="350" y2="430"/><line x1="150" y1="170" x2="92" y2="120"/><line x1="410" y1="170" x2="468" y2="120"/><line x1="150" y1="170" x2="110" y2="232"/>
+            </g>
+            <g class="glass-nodes"><circle cx="150" cy="170" r="30"/><circle cx="410" cy="170" r="30"/><circle cx="280" cy="430" r="20"/><circle cx="92" cy="120" r="20"/><circle cx="468" cy="120" r="20"/><circle cx="110" cy="232" r="17"/><circle cx="210" cy="430" r="15"/><circle cx="350" cy="430" r="15"/></g>
+            <circle cx="280" cy="232" r="40" class="olive"/><circle cx="318" cy="150" r="11" class="bubble"/><circle cx="300" cy="100" r="7" class="bubble"/>
+          </svg>
+        </div>
+        <h3>Inno Talks</h3>
+        <p class="vert-kick">Gli Aperitivi dell'Innovazione</p>
+        <p>Serate a formula aperitivo in locali selezionati del centro storico. Un ospite d'eccellenza racconta il suo percorso, poi la parola passa al pubblico.</p>
+        <ul class="vert-list">
+          <li>Relatori d'eccellenza, nazionali e del territorio</li>
+          <li>Conduzione curatoriale di Mirko Rocci</li>
+          <li>Ingresso gratuito, posti limitati</li>
+        </ul>
+        <a href="/inno-talks/" class="link-arrow">Scopri gli Inno Talks <span>→</span></a>
+      </article>
+      <article class="vert-card soon reveal">
+        <span class="vert-badge soon-badge">In arrivo · ottobre 2026</span>
+        <div class="vert-emblem">
+          <svg viewBox="0 0 560 560" class="emblem-mic" aria-hidden="true">
+            <rect x="205" y="120" width="150" height="220" rx="75" class="mic-body"/>
+            <g class="mic-lines" stroke-width="9" stroke-linecap="round"><line x1="232" y1="190" x2="328" y2="190"/><line x1="232" y1="225" x2="328" y2="225"/><line x1="232" y1="260" x2="328" y2="260"/></g>
+            <path class="mic-arc" d="M170 250 a110 110 0 0 0 220 0" fill="none" stroke-width="13" stroke-linecap="round"/>
+            <line x1="280" y1="360" x2="280" y2="430" class="mic-stem" stroke-width="13" stroke-linecap="round"/>
+            <line x1="210" y1="430" x2="350" y2="430" class="mic-base" stroke-width="13" stroke-linecap="round"/>
+            <circle cx="262" cy="158" r="22" class="mic-orange"/><circle cx="372" cy="150" r="13" class="mic-orange"/><circle cx="408" cy="115" r="8" class="mic-orange"/>
+          </svg>
+        </div>
+        <h3>Inno Podcast</h3>
+        <p class="vert-kick">Le voci dell'innovazione</p>
+        <p>Gli ospiti degli Inno Talks intervistati da Mirko Rocci in formato podcast professionale. Un dialogo tra pari su scelte coraggiose, fallimenti formativi e intuizioni che cambiano le traiettorie.</p>
+        <a href="/inno-podcast/" class="link-arrow">Scopri Inno Podcast <span>→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker">Rassegna stampa</span>
+      <h2>La stampa racconta <span class="grad">Inno99</span></h2>
+      <p class="lead">{{conta cosa=uscite}} uscite su {{conta cosa=testate}} testate tra quotidiani, giornali online e interviste.</p>
+    </div>
+    {{testate}}
+    {{stampa ultime=3}}
+    <div class="sec-foot"><a class="btn btn-ghost" href="/rassegna-stampa/">Tutta la rassegna stampa <span class="btn-arrow">→</span></a></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="partners reveal">
+      <span class="partners-lbl">Chi rende possibile Inno99</span>
+      <div class="partners-row">
+        <a class="p-logo-iv" href="https://www.inno-valley.it" target="_blank" rel="noopener" aria-label="Innovalley Open Innovation Hub"><img src="/img/logo-innovalley.png" width="2048" height="1067" alt="Innovalley" loading="lazy" /></a>
+        <a class="p-logo" href="/chi-siamo/#sponsor"><small>Sponsor unico</small>Synergie Italia</a>
+        <span class="p-logo"><small>Nel quadro di</small>L'Aquila Capitale Italiana della Cultura 2026</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section tight">
+  <div class="container">
+    <div class="cta-box reveal">
+      <span class="kicker">Il prossimo appuntamento</span>
+      <h2>Ci vediamo a <span class="grad">ottobre</span></h2>
+      <p>Il terzo Inno Talks è in preparazione. Scrivici per ricevere data, luogo e ospiti appena saranno annunciati.</p>
+      <div class="ph-cta">
+        <a class="btn btn-lg btn-glow" href="/inno-talks/3/">Scopri le novità <span class="btn-arrow">→</span></a>
+        <a class="btn btn-lg btn-ghost" href="/contatti/">Contattaci</a>
+      </div>
+      <div class="cta-contacts"><a href="tel:+393288295361">328 82 95 361</a><span class="sep"></span><a href="mailto:eventi@inno-valley.it">eventi@inno-valley.it</a></div>
+    </div>
+  </div>
+</section>

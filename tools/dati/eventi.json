@@ -1,0 +1,80 @@
+[
+  {
+    "n": 1,
+    "stato": "svolto",
+    "data": "2026-07-02",
+    "data_txt": "2 luglio 2026",
+    "giorno": "Giovedì 2 luglio 2026",
+    "titolo": "Spazio e innovazione",
+    "sottotitolo": "Un dilemma di sostenibilità",
+    "luogo": "Ju Boss",
+    "luogo_esteso": "Ju Boss · La Cantina Vini & Spumanti, Via Castello 3",
+    "img": "/img/inno99-debutto-laquilablog.jpg",
+    "img_w": 2048,
+    "img_h": 1128,
+    "img_alt": "Il pubblico in sala da Ju Boss durante il primo Inno Talks",
+    "sintesi": "Il debutto, con l'ing. Marziale Feudale sulla sostenibilità della nuova corsa allo spazio. Tutto esaurito.",
+    "badge": "Tutto esaurito",
+    "ospiti": [
+      "Marziale Feudale",
+      "Roberto Santangelo",
+      "Roberto Romanelli",
+      "Barbara Braga"
+    ],
+    "llms": [
+      "Il talk dell'ing. Marziale Feudale, già nel team CTO di Thales Alenia Space, sulla sostenibilità della nuova corsa allo spazio.",
+      "Saluti istituzionali di Roberto Santangelo, assessore alla Cultura della Regione Abruzzo.",
+      "Interventi di Roberto Romanelli, direttore generale del Tecnopolo d'Abruzzo, di Barbara Braga per lo sponsor Synergie Italia e di Federico Fioriti per Innovalley.",
+      "Side event dell'incontro del Distretto Aerospaziale Abruzzo (DAAB) «Road map strategiche e tecnologie dello spazio e competenze del territorio».",
+      "Conduzione di Mirko Rocci."
+    ]
+  },
+  {
+    "n": 2,
+    "stato": "svolto",
+    "data": "2026-09-24",
+    "data_txt": "24 settembre 2026",
+    "giorno": "Giovedì 24 settembre 2026",
+    "titolo": "Dalla ricerca al prodotto",
+    "sottotitolo": "Un percorso tra formazione, R&D e trasferimento tecnologico",
+    "luogo": "Irish Pub Via Verdi",
+    "luogo_esteso": "Irish Pub Via Verdi, Via Giuseppe Verdi 1",
+    "img": "/img/inno-talks-2/sala.jpg",
+    "img_w": 1600,
+    "img_h": 900,
+    "img_alt": "La sala dell'Irish Pub Via Verdi piena di pubblico durante Inno Talks #2",
+    "sintesi": "Il keynote del prof. Michele Flammini e le imprese del Tecnopolo d'Abruzzo. Oltre 40 persone e la diretta integrale da rivedere.",
+    "badge": "Diretta disponibile",
+    "partecipanti": 40,
+    "ospiti": [
+      "Michele Flammini",
+      "Claudia Pagliariccio",
+      "Maurizio Dionisio",
+      "Marco Fanfani",
+      "Roberto Romanelli",
+      "Stefano Tennina",
+      "Alejandro Chaparro Blanco"
+    ],
+    "llms": [
+      "Saluti istituzionali di Claudia Pagliariccio, consigliere comunale del Comune dell'Aquila, di Maurizio Dionisio, direttore generale di ARPA Abruzzo, e di Marco Fanfani, amministratore unico di FondAq. L'assessore regionale Roberto Santangelo ha fatto pervenire i suoi saluti.",
+      "Keynote del prof. Michele Flammini, docente del Gran Sasso Science Institute.",
+      "Roberto Romanelli, direttore generale del Tecnopolo d'Abruzzo, ha introdotto West Aquila con l'ing. Stefano Tennina (SHM-BOARD per il monitoraggio strutturale degli edifici) e Accyourate Group con il dott. Alejandro Chaparro Blanco (la maglietta YouCare per l'elettrocardiogramma continuo).",
+      "Conclusioni di Federico Fioriti, conduzione di Mirko Rocci.",
+      "Diretta integrale di 85 minuti su https://inno99.it/inno-talks/2/#diretta e resoconto in PDF su https://inno99.it/docs/Inno99_InnoTalks2_resoconto_24settembre2026.pdf"
+    ]
+  },
+  {
+    "n": 3,
+    "stato": "in-preparazione",
+    "data": "2026-10-01",
+    "data_txt": "Ottobre 2026",
+    "giorno": "Ottobre 2026",
+    "titolo": "In preparazione",
+    "sottotitolo": "Data, luogo e ospiti in arrivo",
+    "luogo": "",
+    "luogo_esteso": "Un locale del centro storico dell'Aquila",
+    "sintesi": "Il terzo Aperitivo dell'Innovazione è in lavorazione. Data, luogo e ospiti saranno annunciati a breve.",
+    "badge": "In preparazione",
+    "ospiti": []
+  }
+]
