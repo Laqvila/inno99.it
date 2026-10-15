@@ -88,11 +88,91 @@ ICONE = {
     "calice": '<path d="M7 3h10l-1 7a4 4 0 0 1-8 0L7 3ZM12 14v6M8 21h8"/>',
     "esterno": '<path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/>',
     "check": '<path d="m5 12 4.5 4.5L19 7"/>',
+    "campana": '<path d="M6 16v-5a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/>',
+    "bus": '<rect x="4" y="3" width="16" height="15" rx="3"/><path d="M4 11h16M8 18v3M16 18v3M8 14.5h.01M16 14.5h.01"/>',
+    "film": '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 4v16M17 4v16M3 9h4M3 15h4M17 9h4M17 15h4"/>',
+    "sconto": '<path d="M20.5 12.5 12.5 20.5 3.5 11.5V3.5h8z"/><circle cx="8" cy="8" r="1.6"/>',
+    "telefonino": '<rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18.5h2"/>',
+    "piu": '<circle cx="12" cy="12" r="9.5"/><path d="M12 8v8M8 12h8"/>',
 }
 
 
 def icona(nome, cls="ico"):
     return f'<svg class="{cls}" viewBox="0 0 24 24" aria-hidden="true">{ICONE[nome]}</svg>'
+
+
+# --------------------------------------------------------------------------
+# L'AquiLive, l'app degli eventi dell'Aquila ideata da Mirko Rocci
+# --------------------------------------------------------------------------
+APP_IOS = "https://apps.apple.com/it/app/laquilive/id6796280318"
+# su Google Play la provenienza arriva nei rapporti della Play Console
+APP_ANDROID = "https://play.google.com/store/apps/details?id=it.aqlive99.app&referrer=utm_source%3Dinno99%26utm_medium%3Dsito"
+MARCHI = {
+    "apple": '<path d="M12.15 6.9c-.95 0-2.42-1.08-3.96-1.04-2.04.03-3.91 1.18-4.96 3.01-2.12 3.68-.55 9.1 1.52 12.09 1.01 1.45 2.21 3.09 3.79 3.04 1.52-.07 2.09-.99 3.94-.99 1.83 0 2.35.99 3.96.95 1.64-.03 2.68-1.48 3.68-2.95 1.16-1.69 1.64-3.33 1.66-3.42-.04-.01-3.18-1.22-3.22-4.86-.03-3.04 2.48-4.49 2.6-4.56-1.43-2.09-3.62-2.32-4.39-2.38-2-.16-3.68 1.09-4.62 1.09zm3.38-3.07c.84-1.01 1.4-2.43 1.25-3.83-1.21.05-2.66.81-3.53 1.82-.78.9-1.45 2.34-1.27 3.71 1.34.1 2.71-.69 3.55-1.7z"/>',
+    "play": '<path fill="#00D7FE" d="M3.6 1.8c-.3.3-.4.7-.4 1.3v17.8c0 .6.1 1 .4 1.3l10-10.2z"/>'
+            '<path fill="#FFCE00" d="m17 15.6-3.4-3.4L17 8.8l4 2.3c1.2.7 1.2 1.7 0 2.4z"/>'
+            '<path fill="#FF3A44" d="M17 15.6 13.6 12.2 3.6 22.2c.4.4 1 .4 1.7 0z"/>'
+            '<path fill="#00F076" d="M17 8.8 5.3 2.1c-.7-.4-1.3-.4-1.7 0l10 10.1z"/>',
+}
+
+
+def marchio(nome):
+    fill = ' fill="currentColor"' if nome == "apple" else ""
+    return f'<svg class="store-mark" viewBox="0 0 24 24" aria-hidden="true"{fill}>{MARCHI[nome]}</svg>'
+
+
+def store_btns(cls=""):
+    return (f'<div class="stores{" " + cls if cls else ""}">'
+            f'<a class="store-btn" href="{a(APP_IOS)}" target="_blank" rel="noopener" aria-label="Scarica L&#39;AquiLive da App Store per iPhone">'
+            f'{marchio("apple")}<span><small>Scarica su</small><b>App Store</b></span></a>'
+            f'<a class="store-btn" href="{a(APP_ANDROID)}" target="_blank" rel="noopener" aria-label="Scarica L&#39;AquiLive da Google Play per Android">'
+            f'{marchio("play")}<span><small>Disponibile su</small><b>Google Play</b></span></a></div>')
+
+
+TELEFONI = {
+    "servizi": ("servizi-inno99.jpg", 600, 1132, "La sezione Servizi esclusivi di L'AquiLive con Inno99 in evidenza"),
+    "oggi": ("oggi-in-citta.jpg", 600, 1298, "La schermata Oggi in città di L'AquiLive con gli eventi del giorno e i Servizi esclusivi"),
+    "mappa": ("mappa.jpg", 600, 1298, "La mappa di L'AquiLive con gli eventi geolocalizzati nel centro dell'Aquila"),
+    "evento": ("scheda-evento.jpg", 600, 1132, "La scheda di un evento su L'AquiLive con data, ora, luogo e foto"),
+    "notizie": ("notizie.jpg", 600, 1132, "Le notizie locali delle testate aquilane raccolte in L'AquiLive"),
+}
+
+
+def telefono(nome, cls=""):
+    f, w, h, alt = TELEFONI[nome]
+    return (f'<figure class="phone{" " + cls if cls else ""}"><img src="/img/laquilive/{f}" alt="{a(alt)}" '
+            f'width="{w}" height="{h}" loading="lazy" /></figure>')
+
+
+def comp_store(meta, args):
+    return store_btns(args.get("cls", ""))
+
+
+def comp_telefono(meta, args):
+    return telefono(args["n"], args.get("cls", ""))
+
+
+def comp_app(meta, args):
+    if args.get("mini"):
+        return f"""<aside class="app-mini reveal" aria-label="L'AquiLive">
+  <img class="am-ico" src="/img/laquilive/icona.png" alt="" width="64" height="64" loading="lazy" />
+  <div class="am-text"><b>Segui le prossime serate su <span class="aql">L'Aqui<i>Live</i></span></b><span>L'app gratuita degli eventi dell'Aquila, con una sezione dedicata a Inno99. <a class="link-inline" href="/laquilive/">Scopri l'app</a></span></div>
+  {store_btns("sm")}
+</aside>"""
+    return f"""<div class="app-band reveal">
+  <div class="ab-text">
+    <span class="ab-kicker"><img src="/img/laquilive/icona.png" alt="" width="44" height="44" loading="lazy" /> Gli appuntamenti in tasca</span>
+    <h2>Tutti gli Inno Talks su <span class="aql">L'Aqui<i>Live</i></span></h2>
+    <p>L'app gratuita con tutti gli eventi dell'Aquila e provincia ha una sezione dedicata a Inno99. Salvi la serata, scegli quando ricevere il promemoria e il prossimo appuntamento non ti sfugge.</p>
+    {store_btns()}
+    <a class="link-arrow" href="/laquilive/">Scopri L'AquiLive <span>→</span></a>
+  </div>
+  <div class="ab-phones">
+    {telefono("oggi", "back")}
+    {telefono("servizi", "front")}
+    <span class="ab-chip" aria-hidden="true">{icona("stella")} Inno99 in evidenza</span>
+  </div>
+</div>"""
 
 
 COLORI_BURST = ["#F08020", "#D42A70", "#F0B400"]
@@ -167,6 +247,7 @@ def header(meta):
         </li>
         <li><a class="menu-link" href="/inno-podcast/"{cur("podcast")}>Inno Podcast <span class="soon-pill">In arrivo</span></a></li>
         <li><a class="menu-link" href="/rassegna-stampa/"{cur("stampa")}>Rassegna stampa</a></li>
+        <li><a class="menu-link menu-app" href="/laquilive/"{cur("app")}><img src="/img/laquilive/icona.png" alt="" width="22" height="22" />L'AquiLive <span class="soon-pill app-pill">App</span></a></li>
       </ul>
     </nav>
     <a class="iv-chip" href="https://www.inno-valley.it" target="_blank" rel="noopener" aria-label="Innovalley Open Innovation Hub, sito ufficiale">
@@ -203,6 +284,7 @@ def drawer(meta):
     </div>
     <a class="dr-link" href="/inno-podcast/"{cur("podcast")}>Inno Podcast <span class="soon-pill">In arrivo</span></a>
     <a class="dr-link" href="/rassegna-stampa/"{cur("stampa")}>Rassegna stampa</a>
+    <a class="dr-link" href="/laquilive/"{cur("app")}>L'AquiLive <span class="soon-pill app-pill">App</span></a>
     <a class="dr-link" href="/contatti/"{cur("contatti")}>Contatti</a>
   </nav>
   <div class="dr-foot">
@@ -229,6 +311,7 @@ def footer():
       <a href="/inno-talks/">Inno Talks</a>
       <a href="/inno-podcast/">Inno Podcast</a>
       <a href="/rassegna-stampa/">Rassegna stampa</a>
+      <a href="/laquilive/">L'app L'AquiLive</a>
       <a href="/contatti/">Contatti</a>
     </div>
     <div class="footer-col">
@@ -455,6 +538,9 @@ COMPONENTI = {
     "icona": comp_icona,
     "burst": comp_burst,
     "evento": comp_evento,
+    "app": comp_app,
+    "store": comp_store,
+    "telefono": comp_telefono,
 }
 
 
@@ -620,6 +706,13 @@ def llms(metas):
     r += ["## Inno Podcast", "",
           "La seconda verticale di Inno99. Gli ospiti degli Inno Talks intervistati da Mirko Rocci in formato podcast "
           "professionale. I primi episodi arrivano a ottobre 2026. " + f"{SITE}/inno-podcast/", "",
+          "## L'AquiLive, l'app con tutti gli eventi di Inno99", "",
+          "L'AquiLive è l'app gratuita e senza pubblicità con tutti gli eventi dell'Aquila e provincia, ideata e costruita "
+          "da Mirko Rocci. Dentro c'è una sezione dedicata a Inno99, tra i Servizi esclusivi, con gli appuntamenti degli "
+          "Inno Talks. Ogni evento si può salvare con un promemoria. Disponibile in sei lingue.", "",
+          f"- App Store (iPhone): {APP_IOS}",
+          "- Google Play (Android): https://play.google.com/store/apps/details?id=it.aqlive99.app",
+          f"- Pagina dedicata: {SITE}/laquilive/", "",
           "## Rassegna stampa", "",
           f"{len(STAMPA)} uscite su {len({s['testata'] for s in STAMPA})} testate. Elenco completo con filtri su {SITE}/rassegna-stampa/", ""]
     for e in sorted([e for e in EVENTI if e["stato"] == "svolto"], key=lambda e: -e["n"]):

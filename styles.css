@@ -61,7 +61,7 @@ section{position:relative}
 .menu{margin-left:auto}
 .menu-list{list-style:none;display:flex;align-items:center;gap:2px}
 .menu-list>li{display:flex;align-items:center}
-.menu-link{position:relative;display:inline-flex;align-items:center;gap:8px;padding:9px 12px;border-radius:10px;color:var(--muted);font-size:.93rem;font-weight:500;transition:color .2s,background .2s}
+.menu-link{position:relative;display:inline-flex;align-items:center;gap:8px;white-space:nowrap;padding:9px 12px;border-radius:10px;color:var(--muted);font-size:.93rem;font-weight:500;transition:color .2s,background .2s}
 .menu-link:hover{color:#fff;background:rgba(255,255,255,.04)}
 .menu-link[aria-current="page"],.menu-link[data-section="on"]{color:#fff}
 .menu-link[aria-current="page"]::after,.menu-link[data-section="on"]::after{content:"";position:absolute;left:12px;right:12px;bottom:3px;height:2px;border-radius:2px;background:var(--grad)}
@@ -636,12 +636,104 @@ a.p-logo:hover{color:var(--text)}
 .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}.reveal.d5{transition-delay:.4s}
 
 /* ============================================================
+   L'AQUILIVE · l'app degli eventi dell'Aquila
+   ============================================================ */
+.aql{white-space:nowrap}
+.aql i{font-style:normal;color:#F5820C}
+.menu-app img{width:20px;height:20px;border-radius:5px;flex:none}
+.app-pill{background:linear-gradient(135deg,rgba(245,130,12,.24),rgba(225,29,95,.2));color:#FFB46B;border-color:rgba(245,130,12,.5)}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -12px}}
+
+.stores{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.store-btn{display:inline-flex;align-items:center;gap:11px;min-width:172px;padding:9px 18px 9px 14px;border-radius:14px;background:#000;border:1px solid rgba(255,255,255,.3);color:#fff;transition:transform .25s var(--ease),border-color .25s,box-shadow .3s}
+.store-btn:hover{transform:translateY(-2px);border-color:#fff;box-shadow:0 14px 30px -12px rgba(245,130,12,.6)}
+.store-mark{width:26px;height:26px;flex:none}
+.store-btn span{display:flex;flex-direction:column;line-height:1.12;text-align:left}
+.store-btn small{font-size:.68rem;letter-spacing:.02em;opacity:.85}
+.store-btn b{font-family:var(--font-d);font-size:1.12rem;font-weight:600;letter-spacing:-.01em;white-space:nowrap}
+.stores.lg .store-btn{min-width:198px;padding:12px 22px 12px 16px}
+.stores.lg .store-mark{width:30px;height:30px}
+.stores.lg .store-btn b{font-size:1.3rem}
+.stores.sm{margin-top:0}
+.stores.sm .store-btn{min-width:0;padding:7px 14px 7px 11px;border-radius:12px}
+.stores.sm .store-mark{width:20px;height:20px}
+.stores.sm .store-btn b{font-size:.95rem}
+.stores.sm .store-btn small{font-size:.6rem}
+
+.phone{position:relative;margin:0;padding:9px;border-radius:38px;background:linear-gradient(160deg,#2b2723,#0d0b0a 60%);border:1px solid rgba(255,255,255,.15);box-shadow:0 40px 80px -30px rgba(0,0,0,.9),inset 0 0 0 1px rgba(0,0,0,.6)}
+.phone img{display:block;width:100%;height:auto;border-radius:30px}
+
+.float-chip{position:absolute;z-index:3;display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:99px;background:rgba(20,15,12,.85);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid rgba(245,130,12,.4);font-family:var(--font-d);font-size:.86rem;font-weight:600;color:#fff;white-space:nowrap;box-shadow:0 14px 30px -12px rgba(0,0,0,.85);animation:bob 6s ease-in-out infinite}
+.float-chip .ico{width:16px;height:16px;fill:none;stroke:#F5820C;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* fascia promozionale riusata nelle pagine */
+.app-band{position:relative;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;align-items:center;padding:52px 56px 0;border-radius:28px;overflow:hidden;background:radial-gradient(120% 140% at 100% 0%,rgba(245,130,12,.22),transparent 55%),radial-gradient(90% 120% at 0% 100%,rgba(225,29,95,.16),transparent 60%),linear-gradient(160deg,#17120f,#0b0908);border:1px solid rgba(245,130,12,.3)}
+.ab-text{padding-bottom:52px}
+.ab-kicker{display:inline-flex;align-items:center;gap:12px;font-family:var(--font-d);font-size:.8rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#FFB46B;margin-bottom:18px}
+.ab-kicker img{width:44px;height:44px;border-radius:12px;box-shadow:0 8px 20px -6px rgba(245,130,12,.6)}
+.app-band h2{font-size:clamp(1.9rem,3.6vw,2.8rem);margin-bottom:14px}
+.app-band p{color:#c9c1b6;max-width:520px}
+.app-band .link-arrow{margin-top:20px}
+.ab-phones{position:relative;align-self:end;height:440px}
+.ab-phones .phone{position:absolute;width:210px}
+.ab-phones .phone.front{left:50%;top:10px;transform:translateX(-25%) rotate(4deg);z-index:2;animation:bob 7s ease-in-out infinite}
+.ab-phones .phone.back{left:50%;top:60px;transform:translateX(-100%) rotate(-7deg);opacity:.8}
+.ab-chip{left:2%;top:46%;animation-delay:-3s}
+
+.app-mini{display:flex;align-items:center;gap:20px;flex-wrap:wrap;padding:20px 24px;border-radius:20px;background:linear-gradient(120deg,rgba(245,130,12,.14),rgba(225,29,95,.08) 60%,transparent),var(--panel);border:1px solid rgba(245,130,12,.3);margin-bottom:30px}
+.am-ico{width:64px;height:64px;border-radius:16px;flex:none}
+.am-text{flex:1 1 280px;display:flex;flex-direction:column;gap:4px}
+.am-text b{font-family:var(--font-d);font-size:1.15rem}
+.am-text>span{color:var(--muted);font-size:.93rem}
+
+/* pagina /laquilive/ */
+.app-hero{padding-bottom:40px}
+.app-hero h1{max-width:13ch}
+.app-hero-visual{position:relative;display:flex;justify-content:center;align-items:center;padding:24px 0}
+.ahv-glow{position:absolute;inset:6% 8%;border-radius:50%;background:radial-gradient(closest-side,rgba(245,130,12,.38),rgba(225,29,95,.16) 60%,transparent);pointer-events:none}
+.phone.phone-hero{width:min(300px,76%);transform:rotate(3deg);animation:bob 8s ease-in-out infinite}
+.fc-1{top:15%;left:0}
+.fc-2{top:47%;right:0;animation-delay:-2s}
+.fc-3{bottom:12%;left:6%;animation-delay:-4s}
+.app-steps{list-style:none;display:grid;gap:16px;margin-top:28px}
+.app-steps li{display:flex;gap:18px;align-items:flex-start;padding:20px 22px;border-radius:18px;background:var(--panel);border:1px solid var(--line)}
+.app-steps li>b{flex:none;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-family:var(--font-d);font-size:1.1rem;color:#fff;background:linear-gradient(135deg,#F5820C,#E11D5F);box-shadow:0 10px 24px -10px rgba(245,130,12,.8)}
+.app-steps h3{font-size:1.2rem;margin-bottom:4px}
+.app-steps p{color:var(--muted);font-size:.95rem}
+.app-steps-visual{display:flex;justify-content:center;align-items:center}
+.app-steps-visual .phone{width:min(290px,78%);transform:rotate(-3deg)}
+.phone-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px;max-width:920px;margin:0 auto}
+.pr-item{text-align:center}
+.pr-item .phone{max-width:250px;margin:0 auto 18px;transition:transform .5s var(--ease)}
+.pr-item .phone img{aspect-ratio:1/2.05;object-fit:cover;object-position:50% 0}
+.pr-item:hover .phone{transform:translateY(-8px)}
+.pr-item b{display:block;font-family:var(--font-d);font-size:1.12rem;margin-bottom:4px}
+.pr-item p{color:var(--muted);font-size:.92rem}
+.app-press{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:44px}
+.app-press a{display:flex;flex-direction:column;gap:8px;height:100%;padding:22px;border-radius:18px;background:var(--panel);border:1px solid var(--line);transition:border-color .3s,transform .3s var(--ease)}
+.app-press a:hover{border-color:rgba(245,130,12,.5);transform:translateY(-3px)}
+.app-press small{font-family:var(--font-d);font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--orange)}
+.app-press b{font-family:var(--font-d);font-size:1.05rem;line-height:1.3}
+.app-press span{margin-top:auto;padding-top:6px;color:var(--orange-lt);font-size:.88rem;font-weight:600}
+.app-cta{position:relative;text-align:center;padding:60px 30px;border-radius:28px;overflow:hidden;background:radial-gradient(80% 120% at 50% 0%,rgba(245,130,12,.25),transparent 60%),linear-gradient(160deg,#17120f,#0b0908);border:1px solid rgba(245,130,12,.3)}
+.ac-ico{width:96px;height:96px;border-radius:24px;box-shadow:0 18px 40px -14px rgba(245,130,12,.7);margin-bottom:22px}
+.app-cta h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:10px}
+.app-cta p{color:#c9c1b6}
+.app-cta .stores{justify-content:center}
+.ac-qr{display:inline-flex;align-items:center;gap:16px;margin-top:30px;padding:12px 20px 12px 12px;border-radius:18px;background:rgba(255,255,255,.04);border:1px solid var(--line-2);text-align:left;max-width:430px}
+.ac-qr img{width:112px;height:112px;border-radius:10px;background:#fff;padding:5px;flex:none}
+.ac-qr span{color:var(--muted);font-size:.92rem}
+
+/* ============================================================
    RESPONSIVE
    ============================================================ */
 @media (max-width:1180px){
   .mega-in{grid-template-columns:1fr}
   .mega-intro{display:none}
   .iv-chip{display:none}
+  .menu-link{padding:9px 9px;font-size:.9rem;gap:6px}
+  .menu-link[aria-current="page"]::after,.menu-link[data-section="on"]::after{left:9px;right:9px}
+  .menu-app img{display:none}
   .drawer .iv-chip{display:flex}
 }
 @media (max-width:980px){
@@ -661,6 +753,11 @@ a.p-logo:hover{color:var(--text)}
   .press-card.featured .press-media{min-height:0;aspect-ratio:16/9;border-right:0;border-bottom:1px solid var(--line)}
   .press-card.featured .press-media img{position:static}
   .footer-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+  .app-band{grid-template-columns:1fr;padding:40px 34px 0;gap:10px}
+  .ab-text{padding-bottom:0}
+  .ab-phones{height:380px;width:100%;max-width:420px;margin:0 auto}
+  .ab-phones .phone{width:180px}
+  .app-press{grid-template-columns:1fr}
   .footer-brand{grid-column:1/-1}
 }
 @media (max-width:760px){
@@ -697,6 +794,19 @@ a.p-logo:hover{color:var(--text)}
   .footer-col:last-child{grid-column:1/-1}
   .cta-contacts{flex-direction:column;gap:10px}
   .cta-contacts .sep{display:none}
+  .app-band{padding:32px 22px 0}
+  .ab-phones{height:330px}
+  .ab-phones .phone{width:158px}
+  .app-mini{padding:18px}
+  .phone-row{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:74%;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 14px;scrollbar-width:none}
+  .phone-row::-webkit-scrollbar{display:none}
+  .pr-item{scroll-snap-align:center}
+  .phone.phone-hero{width:min(250px,70%)}
+  .float-chip{font-size:.78rem;padding:7px 12px}
+  .ac-qr{display:none}
+  .stores.lg .store-btn{min-width:0;flex:1 1 150px;padding:10px 14px 10px 12px;gap:9px}
+  .stores.lg .store-mark{width:26px;height:26px}
+  .stores.lg .store-btn b{font-size:1.08rem}
 }
 @media (max-width:480px){
   .steps{grid-template-columns:1fr 1fr}

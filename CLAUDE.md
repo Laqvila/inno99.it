@@ -14,6 +14,7 @@ Branch principale: `main`
 | `/inno-talks/N/` | Una pagina per ogni serata (racconto, ospiti, foto, stampa) |
 | `/inno-podcast/` | Inno Podcast, in arrivo a ottobre 2026 |
 | `/rassegna-stampa/` | Rassegna unica con filtri per serata e formato |
+| `/laquilive/` | L'app L'AquiLive (eventi dell'Aquila, sezione Inno99): pagina promozionale con i link a App Store e Google Play |
 | `/contatti/` | Come partecipare, stampa, collaborazioni |
 
 Nel menu "Inno Talks" apre un pannello con tutte le serate: le passate portano
@@ -35,6 +36,9 @@ alla loro pagina, la prossima è segnata "In preparazione".
   `intervista`/`anteprima`, data, titolo, estratto, url, immagine, `evidenza`).
 - `tools/dati/faq.json` — le domande frequenti (anche in JSON-LD).
 - `styles.css`, `main.js` — stili e interazioni, condivisi da tutte le pagine.
+- L'app L'AquiLive: link agli store, schermate e componenti `{{app}}` (fascia
+  promozionale), `{{app mini=1}}` (riquadro breve), `{{store}}` (pulsanti App Store e
+  Google Play) e `{{telefono n=...}}` sono in `tools/build.py`; immagini in `img/laquilive/`.
 
 Dopo ogni modifica:
 

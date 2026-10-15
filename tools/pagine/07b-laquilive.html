@@ -1,0 +1,179 @@
+<!--
+{
+  "out": "laquilive/index.html",
+  "path": "/laquilive/",
+  "nav": "app",
+  "priorita": 0.8,
+  "title": "L'AquiLive · Tutti gli eventi di Inno99 nell'app | Inno99",
+  "description": "Scarica L'AquiLive, l'app gratuita e senza pubblicità con tutti gli eventi dell'Aquila e provincia. Dentro c'è una sezione dedicata a Inno99 con gli appuntamenti degli Inno Talks. Su App Store e Google Play.",
+  "og_image": "/img/laquilive/og-laquilive.jpg",
+  "og_w": 1200,
+  "og_h": 630,
+  "og_alt": "L'AquiLive, eventi, cultura e vita quotidiana a L'Aquila e provincia",
+  "crumbs": [["L'AquiLive", null]],
+  "jsonld": [
+    {
+      "@type": "MobileApplication",
+      "@id": "https://inno99.it/laquilive/#app",
+      "name": "L'AquiLive",
+      "url": "https://inno99.it/laquilive/",
+      "description": "App gratuita e senza pubblicità con tutti gli eventi dell'Aquila e provincia, con una sezione dedicata a Inno99 e agli Inno Talks. Mappa interattiva, promemoria, news locali, trasporti, cinema, luoghi da scoprire e sconti esclusivi.",
+      "image": "https://inno99.it/img/laquilive/icona.png",
+      "screenshot": "https://inno99.it/img/laquilive/servizi-inno99.jpg",
+      "applicationCategory": "EntertainmentApplication",
+      "operatingSystem": "Android, iOS",
+      "inLanguage": ["it", "en", "fr", "es", "de", "zh"],
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "installUrl": ["https://apps.apple.com/it/app/laquilive/id6796280318", "https://play.google.com/store/apps/details?id=it.aqlive99.app"],
+      "sameAs": ["https://mirkorocci.it/laquilive-app.html", "https://apps.apple.com/it/app/laquilive/id6796280318", "https://play.google.com/store/apps/details?id=it.aqlive99.app"],
+      "author": { "@type": "Person", "name": "Mirko Rocci", "url": "https://mirkorocci.it/" },
+      "spatialCoverage": { "@type": "Place", "name": "L'Aquila e provincia" }
+    }
+  ]
+}
+-->
+<section class="page-hero app-hero">
+  <div class="container">
+    <div class="split">
+      <div>
+        {{crumbs}}
+        <span class="kicker">L'app degli eventi dell'Aquila</span>
+        <h1>Inno99 in tasca con <span class="aql">L'Aqui<i>Live</i></span></h1>
+        <p class="ph-lead">L'AquiLive è l'app gratuita e senza pubblicità che raccoglie tutti gli eventi dell'Aquila e provincia. Dentro c'è una sezione dedicata a <strong>Inno99</strong>, con gli appuntamenti degli Inno Talks sempre a portata di mano.</p>
+        <div class="ph-meta">
+          <span class="chip-info hot">{{icona n=check}} Gratuita e senza pubblicità</span>
+          <span class="chip-info">{{icona n=telefonino}} iPhone e Android</span>
+          <span class="chip-info">{{icona n=rete}} In 6 lingue</span>
+        </div>
+        {{store cls=lg}}
+      </div>
+      <div class="app-hero-visual">
+        <div class="ahv-glow" aria-hidden="true"></div>
+        {{telefono n=servizi cls=phone-hero}}
+        <span class="float-chip fc-1" aria-hidden="true">{{icona n=stella}} Inno99 in evidenza</span>
+        <span class="float-chip fc-2" aria-hidden="true">{{icona n=campana}} Promemoria</span>
+        <span class="float-chip fc-3" aria-hidden="true"><span class="pulse-dot"></span> Eventi live ora</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="inno99">
+  <div class="container">
+    <div class="split">
+      <div class="app-steps-visual reveal">{{telefono n=evento}}</div>
+      <div>
+        <span class="kicker reveal">Inno99 su L'AquiLive</span>
+        <h2 class="sec-title reveal">Tre passi per non perdere una <span class="grad">serata</span></h2>
+        <ol class="app-steps" data-stagger>
+          <li class="reveal"><b>1</b><div><h3>Scarica l'app</h3><p>È gratuita, su App Store per iPhone e su Google Play per Android.</p></div></li>
+          <li class="reveal"><b>2</b><div><h3>Apri la sezione Inno99</h3><p>La trovi in evidenza tra i Servizi esclusivi, con tutti gli appuntamenti degli Inno Talks.</p></div></li>
+          <li class="reveal"><b>3</b><div><h3>Salva la serata</h3><p>Ogni evento ha la sua scheda con foto, orari, luogo e come arrivare. Lo salvi e l'app ti avvisa quando vuoi tu.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker">Tutta la città in un'app</span>
+      <h2>Cosa trovi su <span class="aql">L'Aqui<i>Live</i></span></h2>
+      <p class="lead">Concerti, teatro, mostre, sagre, conferenze e la Perdonanza Celestiniana, insieme ai servizi che servono ogni giorno a chi vive L'Aquila e a chi la visita.</p>
+    </div>
+    <div class="feature-grid" data-stagger>
+      <article class="card reveal">
+        <div class="card-ico">{{icona n=calendario}}</div>
+        <h3>Tutti gli eventi</h3>
+        <p>Aggiornati di continuo e filtrabili per ora e per tema, da quello che succede adesso al programma del fine settimana.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-ico">{{icona n=luogo}}</div>
+        <h3>Mappa interattiva</h3>
+        <p>Eventi geolocalizzati, luoghi di interesse, farmacie, parcheggi e persino le fontanelle.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-ico">{{icona n=campana}}</div>
+        <h3>Promemoria</h3>
+        <p>Salvi un evento e l'app ti avvisa quando vuoi tu.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-ico">{{icona n=documento}}</div>
+        <h3>News locali</h3>
+        <p>Le notizie delle testate aquilane raccolte in un solo posto, sempre fresche.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-ico">{{icona n=bus}}</div>
+        <h3>Trasporti</h3>
+        <p>Le linee urbane con percorsi e fermate, i collegamenti per Roma e gli aeroporti, navette e taxi.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-ico">{{icona n=film}}</div>
+        <h3>Cinema</h3>
+        <p>La programmazione delle sale e le locandine dei film.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-ico">{{icona n=citta}}</div>
+        <h3>Luoghi da scoprire</h3>
+        <p>Palazzi storici, musei, chiese e la storia della città.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-ico">{{icona n=piu}}</div>
+        <h3>Segnala il tuo evento</h3>
+        <p>Chiunque può proporre un evento dall'app. Dopo una rapida verifica lo vede tutta la città.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-ico">{{icona n=sconto}}</div>
+        <h3>Sconti esclusivi</h3>
+        <p>Offerte di bar, ristoranti, negozi ed esperienze del territorio riservate a chi usa l'app.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker">Uno sguardo all'app</span>
+      <h2>La città a portata di <span class="grad">pollice</span></h2>
+    </div>
+    <div class="phone-row" data-stagger>
+      <div class="pr-item reveal">{{telefono n=oggi}}<b>Oggi in città</b><p>Gli eventi del giorno, quelli live e i servizi esclusivi, Inno99 compreso.</p></div>
+      <div class="pr-item reveal">{{telefono n=mappa}}<b>La mappa</b><p>Cosa succede intorno a te, quartiere per quartiere.</p></div>
+      <div class="pr-item reveal">{{telefono n=notizie}}<b>Le notizie</b><p>Tutte le testate aquilane in un posto solo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="split top">
+      <div class="reveal">
+        <span class="kicker">Nata all'Aquila</span>
+        <h2 class="sec-title">Dall'ideatore di <span class="grad">Inno99</span></h2>
+      </div>
+      <div class="prose reveal">
+        <p>L'AquiLive è stata ideata e costruita da <strong>Mirko Rocci</strong>, fisico e tecnologo aquilano, ideatore e curatore di Inno99. È nata per raccogliere in un solo posto la vita della città, che prima viaggiava tra volantini, pagine social e passaparola.</p>
+        <p>Le attività del territorio possono entrare gratuitamente nella sezione Sconti. Come fare è spiegato sulla <a class="link-inline" href="https://mirkorocci.it/laquilive-app.html" target="_blank" rel="noopener">pagina ufficiale dell'app</a>.</p>
+      </div>
+    </div>
+    <ul class="app-press" data-stagger>
+      <li class="reveal"><a href="https://abruzzosera.it/attualita/laquilive-lapp-gratuita-per-laquila-ideata-dal-fisico-mirko-rocci/" target="_blank" rel="noopener"><small>Abruzzosera</small><b>«L'AquiLive, l'app gratuita per L'Aquila ideata dal fisico Mirko Rocci»</b><span>Leggi l'articolo →</span></a></li>
+      <li class="reveal"><a href="https://www.laquilablog.it/nasce-laquilive-lapp-gratuita-con-tutti-gli-eventi-della-citta/" target="_blank" rel="noopener"><small>L'Aquila Blog</small><b>«Nasce L'AquiLive, l'app gratuita con tutti gli eventi della città»</b><span>Leggi l'articolo →</span></a></li>
+      <li class="reveal"><a href="https://news-town.it/2026/08/25/scenari/arriva-lapp-laquilive-con-tutti-gli-eventi-di-laquila-e-dintorni/" target="_blank" rel="noopener"><small>News-Town</small><b>«Arriva l'app L'AquiLive con tutti gli eventi di L'Aquila e dintorni»</b><span>Leggi l'articolo →</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section tight">
+  <div class="container">
+    <div class="app-cta reveal">
+      <img class="ac-ico" src="/img/laquilive/icona.png" alt="L'icona di L'AquiLive" width="96" height="96" loading="lazy" />
+      <h2>Scarica <span class="aql">L'Aqui<i>Live</i></span></h2>
+      <p>Gratuita e senza pubblicità, in italiano, inglese, francese, spagnolo, tedesco e cinese.</p>
+      {{store cls=lg}}
+      <div class="ac-qr"><img src="/img/laquilive/qr-laquilive.svg" alt="QR code per scaricare L'AquiLive" width="112" height="112" loading="lazy" /><span>Sei al computer? Inquadra il codice con il telefono e arrivi subito allo store giusto.</span></div>
+    </div>
+  </div>
+</section>
