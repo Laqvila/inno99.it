@@ -55,8 +55,13 @@ da mobile, vedrebbero HTML nuovo con CSS/JS vecchi. Non serve più aggiornarlo a
 - **Nuovo articolo di stampa**: aggiungi una voce in `stampa.json` (immagine in
   `img/stampa/`), poi build. Compare nella pagina della serata, nella rassegna e,
   se è tra le ultime tre, in home.
-- **Annunciare la prossima serata**: in `eventi.json` compila la voce `in-preparazione`
-  (data, titolo, luogo, ospiti) e aggiorna `tools/pagine/06-inno-talks-3.html`.
+- **Annunciare la prossima serata**: in `eventi.json` metti la voce a `prossimo` e compila
+  data, `ora`, `inizio` (ISO con fuso, per il conto alla rovescia), titolo, sottotitolo,
+  luogo, `img`, sintesi, `extra` e `llms`; poi scrivi la sua pagina in `tools/pagine/`
+  (modello: `06-inno-talks-3.html`, con programma, luoghi e carosello del locale).
+  La home mostra da sola il riquadro `{{prossimo}}` con foto, data e conto alla
+  rovescia `{{countdown}}`; menu e card passano da "In preparazione" a "Prossima serata".
+  Aggiorna a mano solo la pillola in cima alla home e il riquadro finale "Ci vediamo...".
 - **Dopo una serata**: metti la voce a `svolto`, crea la pagina della serata
   successiva (`inno-talks/N+1`) come `in-preparazione` copiando `06-inno-talks-3.html`,
   aggiorna i testi della home che citano "ottobre".

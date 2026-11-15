@@ -636,6 +636,55 @@ a.p-logo:hover{color:var(--text)}
 .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}.reveal.d5{transition-delay:.4s}
 
 /* ============================================================
+   PROSSIMA SERATA · riquadro in home, conto alla rovescia, luoghi
+   ============================================================ */
+.next-ev{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);border-radius:28px;overflow:hidden;border:1.5px solid transparent;background:linear-gradient(var(--panel),var(--ink-2)) padding-box,conic-gradient(from var(--ang),#F2933F,#C2418F,#3B7DE0,#2BB6A8,#F2933F) border-box;animation:rotAng 8s linear infinite;box-shadow:0 40px 90px -40px rgba(224,105,31,.45)}
+.ne-media{position:relative;display:block;min-height:420px;overflow:hidden}
+.ne-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.next-ev:hover .ne-media img{transform:scale(1.05)}
+.ne-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 60%,rgba(14,18,27,.6)),linear-gradient(0deg,rgba(10,13,19,.35),transparent 40%)}
+.ne-date{position:absolute;left:22px;top:22px;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;width:80px;height:88px;border-radius:18px;background:var(--grad);color:#fff;box-shadow:0 16px 34px -12px rgba(224,105,31,.85)}
+.ne-date b{font-family:var(--font-d);font-size:2.3rem;line-height:1}
+.ne-date small{margin-top:3px;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.ne-body{padding:44px 46px}
+.ne-body .kicker{display:inline-flex;align-items:center;gap:10px}
+.ne-body h2{font-size:clamp(1.9rem,3.6vw,2.7rem)}
+.ne-body h2 a{transition:color .25s}
+.ne-body h2 a:hover{color:var(--orange-lt)}
+.ne-sub{margin-top:10px;font-family:var(--font-d);font-weight:500;color:var(--orange-lt);font-size:1.08rem;line-height:1.4}
+.ne-facts{list-style:none;display:grid;gap:9px;margin-top:20px}
+.ne-facts li{display:flex;align-items:center;gap:11px;font-size:.96rem}
+.ne-facts .ico,.venue-facts .ico{width:18px;height:18px;flex:none;fill:none;stroke:var(--orange);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ne-text{margin-top:16px;color:var(--muted)}
+.next-ev .ph-cta{animation:none;margin-top:26px}
+
+.countdown{display:flex;gap:10px;margin-top:24px}
+.countdown[hidden],.cd-live[hidden]{display:none}
+.countdown>div{min-width:74px;padding:11px 8px 10px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid var(--line-2);text-align:center}
+.countdown b{display:block;font-family:var(--font-d);font-size:1.75rem;font-weight:600;line-height:1;font-variant-numeric:tabular-nums;color:#fff}
+.countdown small{display:block;margin-top:7px;font-size:.66rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.countdown>div:first-child{background:rgba(242,147,63,.12);border-color:rgba(242,147,63,.45)}
+.page-hero .countdown,.page-hero .cd-live{animation:fadeUp .8s var(--ease) .24s both}
+.page-hero .countdown>div{background:rgba(10,13,19,.6);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.cd-live{display:inline-flex;align-items:center;gap:10px;margin-top:24px;padding:10px 18px;border-radius:99px;background:rgba(242,147,63,.14);border:1px solid rgba(242,147,63,.45);font-family:var(--font-d);font-weight:600}
+
+.program-list.one{grid-template-columns:1fr}
+.program-note{margin-top:20px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
+.program-note a{color:var(--orange-lt);font-weight:600}
+
+.place{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center;margin-bottom:64px}
+.place-img{margin:0}
+.place-img img{display:block;width:100%;height:auto;border-radius:var(--r);border:1px solid var(--line-2);box-shadow:0 22px 60px rgba(0,0,0,.45)}
+.credit{display:block;margin-top:10px;font-size:.74rem;color:var(--muted-2)}
+.credit a{text-decoration:underline;text-underline-offset:2px}
+.place h3{font-size:clamp(1.5rem,2.6vw,2.1rem);margin:6px 0 12px}
+.place p{color:var(--muted);line-height:1.7}
+.place .link-arrow,.venue-head .link-arrow{margin-top:16px}
+.venue-head p+p{margin-top:10px}
+.venue-facts{list-style:none;display:grid;gap:8px;margin-top:16px}
+.venue-facts li{display:flex;align-items:center;gap:10px;color:var(--text);font-size:.93rem}
+
+/* ============================================================
    L'AQUILIVE · l'app degli eventi dell'Aquila
    ============================================================ */
 .aql{white-space:nowrap}
@@ -758,6 +807,11 @@ a.p-logo:hover{color:var(--text)}
   .ab-phones{height:380px;width:100%;max-width:420px;margin:0 auto}
   .ab-phones .phone{width:180px}
   .app-press{grid-template-columns:1fr}
+  .next-ev{grid-template-columns:1fr}
+  .ne-media{min-height:0;aspect-ratio:16/9}
+  .ne-media::after{background:linear-gradient(0deg,rgba(14,18,27,.55),transparent 45%)}
+  .ne-body{padding:32px 30px 36px}
+  .place{grid-template-columns:1fr;gap:26px}
   .footer-brand{grid-column:1/-1}
 }
 @media (max-width:760px){
@@ -795,6 +849,14 @@ a.p-logo:hover{color:var(--text)}
   .cta-contacts{flex-direction:column;gap:10px}
   .cta-contacts .sep{display:none}
   .app-band{padding:32px 22px 0}
+  .ne-body{padding:26px 22px 30px}
+  .ab-chip{display:none}
+  .ne-date{left:14px;top:14px;width:66px;height:72px}
+  .ne-date b{font-size:1.9rem}
+  .countdown{gap:7px}
+  .countdown>div{min-width:0;flex:1;padding:10px 4px 9px}
+  .countdown b{font-size:1.45rem}
+  .countdown small{font-size:.58rem;letter-spacing:.08em}
   .ab-phones{height:330px}
   .ab-phones .phone{width:158px}
   .app-mini{padding:18px}

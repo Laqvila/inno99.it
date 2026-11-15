@@ -286,4 +286,33 @@
     const q = new URLSearchParams(location.search).get("serata");
     if (q && /^\d+$/.test(q)) { const b = pf.querySelector('[data-f-evento="' + q + '"]'); if (b) b.click(); }
   }
+
+  /* ---------- conto alla rovescia della prossima serata ---------- */
+  document.querySelectorAll("[data-countdown]").forEach((box) => {
+    const inizio = Date.parse(box.dataset.countdown);
+    if (isNaN(inizio)) return;
+    const live = box.nextElementSibling && box.nextElementSibling.classList.contains("cd-live") ? box.nextElementSibling : null;
+    const u = {};
+    box.querySelectorAll("[data-u]").forEach((b) => { u[b.dataset.u] = b; });
+    const pad = (n) => String(n).padStart(2, "0");
+    let timer = null;
+    const tick = () => {
+      const d = inizio - Date.now();
+      if (d <= 0) {
+        box.hidden = true;
+        // il messaggio resta per le quattro ore della serata
+        if (live) live.hidden = d < -4 * 3600e3;
+        clearInterval(timer);
+        return;
+      }
+      box.hidden = false;
+      const sec = Math.floor(d / 1000);
+      u.g.textContent = Math.floor(sec / 86400);
+      u.h.textContent = pad(Math.floor(sec / 3600) % 24);
+      u.m.textContent = pad(Math.floor(sec / 60) % 60);
+      u.s.textContent = pad(sec % 60);
+    };
+    tick();
+    if (!box.hidden) timer = setInterval(tick, 1000);
+  });
 })();

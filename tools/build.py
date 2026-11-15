@@ -18,6 +18,7 @@ import json
 import re
 import sys
 from pathlib import Path
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parent.parent
 TOOLS = ROOT / "tools"
@@ -201,6 +202,10 @@ def voce_menu_evento(e, attivo):
         media = f'<img src="{a(e["img"])}" alt="" width="{e["img_w"]}" height="{e["img_h"]}" loading="lazy" />'
         tag = '<span class="mev-tag">Com\'è andata</span>'
         cls = "mev"
+    elif e["stato"] == "prossimo":
+        media = f'<img src="{a(e["img"])}" alt="" width="{e["img_w"]}" height="{e["img_h"]}" loading="lazy" />'
+        tag = '<span class="mev-tag next">Prossima serata</span>'
+        cls = "mev is-next"
     else:
         media = f'<span class="mev-soon">{burst()}</span>'
         tag = '<span class="mev-tag next">In preparazione</span>'
@@ -352,12 +357,19 @@ def talk_card(e):
         stato = f'<span class="tc-state">{t(e["badge"])}</span>'
         go = "Com'è andata"
         cls = "talk-card tilt"
+    elif e["stato"] == "prossimo":
+        media = f'<img src="{a(e["img"])}" alt="{a(e["img_alt"])}" width="{e["img_w"]}" height="{e["img_h"]}" loading="lazy" />'
+        stato = f'<span class="tc-state next"><span class="pulse-dot"></span> {t(e["badge"])}</span>'
+        go = "Scopri la serata"
+        cls = "talk-card tilt is-next"
     else:
         media = f'<span class="tc-soon">{burst()}</span>'
         stato = '<span class="tc-state next"><span class="pulse-dot"></span> In preparazione</span>'
         go = "Scopri le novità"
         cls = "talk-card tilt is-next"
     luogo = f' · {t(e["luogo"])}' if e.get("luogo") else ""
+    if e.get("ora"):
+        luogo = f' · ore {t(e["ora"])}{luogo}'
     return f"""<div class="reveal"><a class="{cls}" href="/inno-talks/{n}/">
   <span class="tc-media">{media}<span class="tc-num">#{n}</span>{stato}</span>
   <span class="tc-body">
@@ -513,6 +525,57 @@ def comp_pager(meta, args):
     return f'<nav class="pager" aria-label="Altre serate">{"".join(parti)}</nav>'
 
 
+def prossimo():
+    return next((e for e in EVENTI if e["stato"] == "prossimo"), None)
+
+
+def countdown(e):
+    return (f'<div class="countdown" data-countdown="{a(e["inizio"])}" role="timer" '
+            f'aria-label="Tempo che manca a Inno Talks #{e["n"]}" hidden>'
+            '<div><b data-u="g">0</b><small>giorni</small></div>'
+            '<div><b data-u="h">00</b><small>ore</small></div>'
+            '<div><b data-u="m">00</b><small>minuti</small></div>'
+            '<div><b data-u="s">00</b><small>secondi</small></div></div>'
+            '<p class="cd-live" hidden><span class="pulse-dot"></span> La serata è iniziata, ti aspettiamo</p>')
+
+
+def comp_countdown(meta, args):
+    e = evento(args["n"]) if "n" in args else prossimo()
+    return countdown(e) if e and e.get("inizio") else ""
+
+
+def comp_prossimo(meta, args):
+    """Il riquadro della prossima serata in home. Sparisce da solo se nessuna serata è annunciata."""
+    e = prossimo()
+    if not e:
+        return ""
+    g, m = int(e["data"][8:10]), MESI_BREVI[int(e["data"][5:7]) - 1]
+    oggetto = f"Inno Talks #{e['n']} · prenotazione"
+    extra = f'<li>{icona("calice")}{t(e["extra"])}</li>' if e.get("extra") else ""
+    return f"""<div class="next-ev reveal">
+  <a class="ne-media" href="/inno-talks/{e['n']}/" tabindex="-1" aria-hidden="true">
+    <img src="{a(e['img'])}" alt="" width="{e['img_w']}" height="{e['img_h']}" loading="lazy" />
+    <span class="ne-date"><b>{g}</b><small>{m}</small></span>
+  </a>
+  <div class="ne-body">
+    <span class="kicker"><span class="pulse-dot"></span> Prossima serata · Inno Talks #{e['n']}</span>
+    <h2><a href="/inno-talks/{e['n']}/">{t(e['titolo'])}</a></h2>
+    <p class="ne-sub">{t(e['sottotitolo'])}</p>
+    <ul class="ne-facts">
+      <li>{icona("calendario")}{t(e['giorno'])} · ore {t(e['ora'])}</li>
+      <li>{icona("luogo")}{t(e['luogo_esteso'])}, L'Aquila</li>
+      {extra}
+    </ul>
+    <p class="ne-text">{t(e['sintesi'])}</p>
+    {countdown(e)}
+    <div class="ph-cta">
+      <a class="btn btn-glow" href="mailto:eventi@inno-valley.it?subject={quote(oggetto)}">{icona("mail")} Prenota il posto</a>
+      <a class="btn btn-ghost" href="/inno-talks/{e['n']}/">Scopri la serata <span class="btn-arrow">→</span></a>
+    </div>
+  </div>
+</div>"""
+
+
 def comp_icona(meta, args):
     return icona(args.get("n", "freccia"), args.get("cls", "ico"))
 
@@ -539,6 +602,8 @@ COMPONENTI = {
     "burst": comp_burst,
     "evento": comp_evento,
     "app": comp_app,
+    "countdown": comp_countdown,
+    "prossimo": comp_prossimo,
     "store": comp_store,
     "telefono": comp_telefono,
 }
@@ -695,6 +760,12 @@ def llms(metas):
             r.append(f"{e['giorno']} · {e['luogo_esteso']}, L'Aquila. {e['sottotitolo']}.")
             r.append("")
             r.append(e["sintesi"])
+            r.append("")
+            r += [f"- {x}" for x in e.get("llms", [])]
+            r.append(f"- Pagina della serata: {SITE}/inno-talks/{e['n']}/")
+        elif e["stato"] == "prossimo":
+            r.append(f"### Inno Talks #{e['n']} · {e['titolo']} (prossima serata)")
+            r.append(f"{e['giorno']}, ore {e['ora']} · {e['luogo_esteso']}, L'Aquila. {e['sottotitolo']}.")
             r.append("")
             r += [f"- {x}" for x in e.get("llms", [])]
             r.append(f"- Pagina della serata: {SITE}/inno-talks/{e['n']}/")
