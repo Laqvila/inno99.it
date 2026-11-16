@@ -18,7 +18,8 @@ Branch principale: `main`
 | `/contatti/` | Come partecipare, stampa, collaborazioni |
 
 Nel menu "Inno Talks" apre un pannello con tutte le serate: le passate portano
-alla loro pagina, la prossima è segnata "In preparazione".
+alla loro pagina, quella annunciata è segnata "Prossima serata" e quella ancora
+senza data "In preparazione".
 
 ## Come si modifica: generatore `tools/build.py`
 **Le pagine HTML pubblicate sono generate. Non modificare a mano** `index.html`,
@@ -29,7 +30,7 @@ alla loro pagina, la prossima è segnata "In preparazione".
   JSON-LD). Nel corpo si usano componenti come `{{appuntamenti}}`,
   `{{stampa evento=2}}`, `{{stampa tutte=1}}`, `{{faq}}`, `{{pager n=2}}`,
   `{{icona n=mail}}`, `{{crumbs}}`, `{{burst}}`, `{{conta cosa=uscite}}`.
-- `tools/dati/eventi.json` — le serate (numero, stato `svolto` o `in-preparazione`,
+- `tools/dati/eventi.json` — le serate (numero, stato `svolto`, `prossimo` o `in-preparazione`,
   data, titolo, luogo, immagine, sintesi, ospiti). Menu, card, footer e llms.txt
   si aggiornano da qui.
 - `tools/dati/stampa.json` — la rassegna stampa (testata, tipo `cartaceo`/`online`/
