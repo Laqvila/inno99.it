@@ -4,6 +4,22 @@
    Le pagine si generano con tools/build.py
    ============================================================ */
 
+/* Font ospitati sul sito (niente Google Fonts): Space Grotesk e Inter variabili,
+   sottoinsiemi latin e latin-ext da @fontsource-variable 5.3.0, licenza OFL 1.1
+   (fonts/OFL-*.txt) */
+@font-face{font-family:"Space Grotesk";font-style:normal;font-display:swap;font-weight:300 700;
+  src:url(/fonts/space-grotesk-latin-ext-wght-normal.woff2) format("woff2");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Space Grotesk";font-style:normal;font-display:swap;font-weight:300 700;
+  src:url(/fonts/space-grotesk-latin-wght-normal.woff2) format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-display:swap;font-weight:100 900;
+  src:url(/fonts/inter-latin-ext-wght-normal.woff2) format("woff2");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-display:swap;font-weight:100 900;
+  src:url(/fonts/inter-latin-wght-normal.woff2) format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
 :root{
   --ink:#0A0D13;--ink-2:#0E121B;--panel:#141A26;--panel-2:#1A2130;--navy:#22252C;
   --line:rgba(255,255,255,.08);--line-2:rgba(255,255,255,.14);
@@ -179,6 +195,18 @@ section{position:relative}
 .prose p:first-child{margin-top:0}
 .prose strong,.prose b{color:var(--text)}
 .prose h3{font-size:1.4rem;margin:30px 0 4px}
+/* pagina Privacy e cookie */
+.legal{max-width:780px}
+.legal h2{font-size:clamp(1.35rem,2.6vw,1.7rem);margin:44px 0 6px}
+.legal h2:first-child{margin-top:0}
+.legal ul{margin:14px 0 0 1.2rem;color:var(--muted);font-size:1.05rem;line-height:1.7}
+.legal li{margin-top:8px}
+.legal a{color:var(--orange-lt);text-decoration:underline;text-underline-offset:3px}
+.legal .legal-box{margin-top:16px;padding:18px 22px;border:1px solid var(--line-2);border-radius:var(--r);background:var(--panel)}
+.legal .legal-box p{margin-top:4px}
+.legal code{font-size:.92em;color:var(--text)}
+.footer-bottom a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.footer-bottom a:hover{color:var(--text)}
 .split{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:center}
 .split.top{align-items:start}
 .sec-title{font-size:clamp(1.8rem,3.6vw,2.6rem);margin:0 0 18px}

@@ -16,6 +16,7 @@ Inno99 è nato da un'idea di Mirko Rocci e Federico Fioriti per Innovalley Open 
 - [L'AquiLive · Tutti gli eventi di Inno99 nell'app](https://inno99.it/laquilive/): Scarica L'AquiLive, l'app gratuita e senza pubblicità con tutti gli eventi dell'Aquila e provincia. Dentro c'è una sezione dedicata a Inno99 con gli appuntamenti degli Inno Talks. Su App Store e Google Play.
 - [Rassegna stampa · Inno99 sui giornali](https://inno99.it/rassegna-stampa/): Articoli, interviste e pagine di giornale dedicate agli Inno Talks di Inno99 all'Aquila, dal debutto di luglio 2026 a oggi. Il Centro, AbruzzoWeb, L'Aquila Blog, Rete8 e altre testate.
 - [Contatti · Partecipa agli Inno Talks](https://inno99.it/contatti/): Come partecipare agli Inno Talks, gli Aperitivi dell'Innovazione di Inno99 all'Aquila. Ingresso gratuito e posti limitati. Contatti per pubblico, stampa e collaborazioni.
+- [Privacy e cookie](https://inno99.it/privacy/): Informativa sulla privacy e sui cookie di inno99.it: chi tratta i dati, quali dati, per quali scopi, a chi arrivano, per quanto tempo e come esercitare i tuoi diritti. Il sito non usa cookie.
 
 ## Appuntamenti
 

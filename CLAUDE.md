@@ -16,6 +16,7 @@ Branch principale: `main`
 | `/rassegna-stampa/` | Rassegna unica con filtri per serata e formato |
 | `/laquilive/` | L'app L'AquiLive (eventi dell'Aquila, sezione Inno99): pagina promozionale con i link a App Store e Google Play |
 | `/contatti/` | Come partecipare, stampa, collaborazioni |
+| `/privacy/` | Informativa privacy e cookie (titolare Innovalley Cube Srl). Se il sito inizia a usare cookie, statistiche, moduli o servizi esterni, va aggiornata |
 
 Nel menu "Inno Talks" apre un pannello con tutte le serate: le passate portano
 alla loro pagina, quella annunciata è segnata "Prossima serata" e quella ancora
@@ -88,6 +89,8 @@ Il messaggio di commit deve descrivere chiaramente la modifica (es. "Aggiunge se
 - Percorsi sempre assoluti dalla radice (`/img/...`, `/inno-talks/2/`), perché le
   pagine stanno in sottocartelle.
 - `_config.yml` esclude `tools/` e `CLAUDE.md` dalla pubblicazione.
+- Font ospitati sul sito in `/fonts/` (Space Grotesk e Inter, woff2 da @fontsource-variable, licenza OFL):
+  niente Google Fonts, la CSP ha `font-src 'self'`.
 - I vecchi link con ancora (`/#prossimo`, `/#stampa`, `/#faq`...) vengono
   reindirizzati alle nuove pagine da `main.js`.
 

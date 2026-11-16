@@ -331,7 +331,7 @@ def footer():
     </div>
   </div>
   <div class="container footer-bottom">
-    <span>© 2026 Inno99 · Innovalley Cube Srl e Associazione Innovalley Promotori di Innovazione · P.IVA 02176300693</span>
+    <span>© 2026 Inno99 · Innovalley Cube Srl e Associazione Innovalley Promotori di Innovazione · P.IVA 02176300693 · <a href="/privacy/">Privacy e cookie</a></span>
     <span>Sponsor unico 2026 · Synergie Italia</span>
   </div>
 </footer>
@@ -658,7 +658,7 @@ def head(meta):
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; media-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests" />
 <meta name="referrer" content="strict-origin-when-cross-origin" />
 <title>{t(meta["title"])}</title>
 <meta name="description" content="{a(meta["description"])}" />
@@ -680,9 +680,8 @@ def head(meta):
 <meta name="twitter:description" content="{a(meta.get("og_description", meta["description"]))}" />
 <meta name="twitter:image" content="{SITE}{og}" />
 <link rel="icon" href="{FAVICON}" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+<link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="stylesheet" href="{ASSETS["styles.css"]}" />{player_css}
 <noscript><link rel="stylesheet" href="/noscript.css" /></noscript>
 <script type="application/ld+json">
