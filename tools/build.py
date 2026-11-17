@@ -552,9 +552,14 @@ def comp_prossimo(meta, args):
     g, m = int(e["data"][8:10]), MESI_BREVI[int(e["data"][5:7]) - 1]
     oggetto = f"Inno Talks #{e['n']} · prenotazione"
     extra = f'<li>{icona("calice")}{t(e["extra"])}</li>' if e.get("extra") else ""
+    media = f'<img src="{a(e["img"])}" alt="" width="{e["img_w"]}" height="{e["img_h"]}" loading="lazy" />'
+    if e.get("img_q"):
+        # su schermi larghi il riquadro è quasi quadrato: si usa la versione quadrata dell'immagine
+        media = (f'<picture><source media="(min-width: 981px)" srcset="{a(e["img_q"])}" width="1100" height="1100" />'
+                 f'{media}</picture>')
     return f"""<div class="next-ev reveal">
   <a class="ne-media" href="/inno-talks/{e['n']}/" tabindex="-1" aria-hidden="true">
-    <img src="{a(e['img'])}" alt="" width="{e['img_w']}" height="{e['img_h']}" loading="lazy" />
+    {media}
     <span class="ne-date"><b>{g}</b><small>{m}</small></span>
   </a>
   <div class="ne-body">

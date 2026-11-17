@@ -75,10 +75,10 @@
     "sottotitolo": "Storie d'impresa e un intermezzo letterario a Palazzo Fibbioni",
     "luogo": "Palazzo Fibbioni",
     "luogo_esteso": "Palazzo Fibbioni, via San Bernardino",
-    "img": "/img/inno-talks-3/corte-palazzo-fibbioni.jpg",
+    "img": "/img/inno-talks-3/palazzo-fibbioni-connubio.jpg",
     "img_w": 1600,
     "img_h": 900,
-    "img_alt": "La corte interna di Palazzo Fibbioni apparecchiata dal Ristorante Connubio",
+    "img_alt": "La facciata di Palazzo Fibbioni accanto alla vetrina del Ristorante Connubio",
     "sintesi": "Due imprese del Tecnopolo d'Abruzzo raccontano il loro lavoro, poi l'intermezzo letterario di Marco Pace e l'aperitivo al Ristorante Connubio.",
     "badge": "Prossima serata",
     "ospiti": [
@@ -88,9 +88,10 @@
       "Giovedì 19 novembre 2026 alle 18:30 a Palazzo Fibbioni, nel centro storico dell'Aquila.",
       "Due imprese del Tecnopolo d'Abruzzo raccontano le proprie attività, con la moderazione di Mirko Rocci.",
       "Intermezzo letterario di Marco Pace.",
-      "Al termine l'Aperitivo dell'Innovazione al Ristorante Connubio, nei locali dello stesso Palazzo Fibbioni (via San Bernardino 8-16).",
+      "Al termine l'Aperitivo dell'Innovazione nella cantina del Ristorante Connubio, nei locali dello stesso Palazzo Fibbioni (via San Bernardino 8-16).",
       "Ingresso gratuito con posti limitati. Prenotazioni a eventi@inno-valley.it o al 328 82 95 361."
     ],
-    "extra": "Al termine l'aperitivo al Ristorante Connubio"
+    "extra": "Al termine l'aperitivo nella cantina del Ristorante Connubio",
+    "img_q": "/img/inno-talks-3/palazzo-fibbioni-connubio-q.jpg"
   }
 ]

@@ -669,6 +669,7 @@ a.p-logo:hover{color:var(--text)}
 .next-ev{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);border-radius:28px;overflow:hidden;border:1.5px solid transparent;background:linear-gradient(var(--panel),var(--ink-2)) padding-box,conic-gradient(from var(--ang),#F2933F,#C2418F,#3B7DE0,#2BB6A8,#F2933F) border-box;animation:rotAng 8s linear infinite;box-shadow:0 40px 90px -40px rgba(224,105,31,.45)}
 .ne-media{position:relative;display:block;min-height:420px;overflow:hidden}
 .ne-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.ne-media picture{position:absolute;inset:0}
 .next-ev:hover .ne-media img{transform:scale(1.05)}
 .ne-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 60%,rgba(14,18,27,.6)),linear-gradient(0deg,rgba(10,13,19,.35),transparent 40%)}
 .ne-date{position:absolute;left:22px;top:22px;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;width:80px;height:88px;border-radius:18px;background:var(--grad);color:#fff;box-shadow:0 16px 34px -12px rgba(224,105,31,.85)}
