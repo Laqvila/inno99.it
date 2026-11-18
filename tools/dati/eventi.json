@@ -89,7 +89,7 @@
     ],
     "llms": [
       "Giovedì 19 novembre 2026 alle 18:30 a Palazzo Fibbioni, nel centro storico dell'Aquila.",
-      "Apertura e saluti istituzionali di Roberto Romanelli, direttore generale del Tecnopolo d'Abruzzo. Sono invitati anche Roberto Santangelo, assessore alla Cultura della Regione Abruzzo, e Claudia Pagliariccio, consigliera comunale, per il Comune dell'Aquila.",
+      "Apertura e saluti istituzionali di Roberto Romanelli, direttore generale del Tecnopolo d'Abruzzo. Sono invitati anche il sindaco dell'Aquila Pierluigi Biondi, Roberto Santangelo, assessore alla Cultura della Regione Abruzzo, e Claudia Pagliariccio, consigliera comunale, per il Comune dell'Aquila.",
       "Mirko Rocci, speaker e moderatore, presenta Clair Clinique, la startup di cosmetica personalizzata con intelligenza artificiale e robotica di cui è cofondatore e CTO, nata nel 2025 al Tecnopolo d'Abruzzo. Il suo ecosistema unisce il software in cloud Symphonie, il sistema robotico brevettato Opera e l'app Adagio. Clair Clinique è arrivata tra le prime 50 delle oltre 40.000 candidature di CoCreate Pitch 2026, promossa da Alibaba.com con Plug and Play.",
       "R13 Technology, società di ingegneria nata nel 2014 nel Dipartimento DIIIE dell'Università dell'Aquila e dal 2024 al Tecnopolo d'Abruzzo, progetta elettronica su misura, elettronica di potenza, controllo motore e firmware per l'automotive, l'aerospazio e il medicale. La presentano Daniele Sponta, project manager, e l'ing. Federico Visciano, ingegnere elettrico. https://r13technology.it/",
       "Dialogo con il pubblico moderato da Mirko Rocci, poi l'intermezzo poetico-letterario dell'aquilano Marco Pace.",
@@ -118,7 +118,7 @@
         "testo": "Speaker e moderatore, presenta Clair Clinique."
       },
       {
-        "img": "/img/inno-talks-3-locandina.webp",
+        "img": "/img/inno-talks-3-locandina-v2.webp",
         "w": 1200,
         "h": 1791,
         "fit": "contain",
