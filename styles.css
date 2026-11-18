@@ -438,6 +438,7 @@ section{position:relative}
 .greet-list li::before{content:counter(greet);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-weight:700;font-size:.85rem;color:#fff;background:var(--grad)}
 .greet-list.plain li{padding-left:0}
 .greet-list.plain li::before{display:none}
+.lu-role.lu-sub{display:block;margin-top:16px}
 .lineup.big .lu-photo{width:120px;height:120px}
 .lineup.big .greet-photo{width:78px;height:78px}
 .lineup.big .greet-photo.initials{font-size:1.2rem}
@@ -699,6 +700,7 @@ a.p-logo:hover{color:var(--text)}
 .ne-media .car-slide figcaption{z-index:2;padding:60px 26px 44px}
 .ne-media .car-btn{z-index:3}
 .ne-media .car-dots{z-index:3}
+.cap-credit{display:block;margin-top:2px;font-size:.66rem;color:rgba(255,255,255,.6)}
 .car-slide.pos-top img{object-position:50% 12%}
 .car-slide.fit-contain::before,.car-slide.fit-persona::before{content:"";position:absolute;inset:-40px;background:var(--bg,none) center/cover no-repeat;filter:blur(26px) brightness(.5) saturate(1.15)}
 .car-slide.fit-contain img{object-fit:contain}
@@ -857,8 +859,8 @@ a.p-logo:hover{color:var(--text)}
   .ne-media{min-height:0;aspect-ratio:16/9}
   .ne-media.has-car{aspect-ratio:1/1}
   .ne-media .car-slide.fit-persona img{width:min(260px,62%);height:auto}
-  .ne-media .car-slide figcaption{padding:46px 18px 36px}
-  .ne-media .car-slide figcaption span{display:none}
+  .ne-media .car-slide figcaption{padding:46px 18px 34px}
+  .ne-media .car-slide figcaption span{font-size:.8rem}
   .ne-media::after{background:linear-gradient(0deg,rgba(14,18,27,.55),transparent 45%)}
   .ne-body{padding:32px 30px 36px}
   .place{grid-template-columns:1fr;gap:26px}

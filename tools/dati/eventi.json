@@ -85,11 +85,12 @@
       "Daniele Sponta",
       "Federico Visciano",
       "Marco Pace",
-      "Roberto Romanelli"
+      "Roberto Romanelli",
+      "Claudia Pagliariccio"
     ],
     "llms": [
       "Giovedì 19 novembre 2026 alle 18:30 a Palazzo Fibbioni, nel centro storico dell'Aquila.",
-      "Apertura e saluti istituzionali di Roberto Romanelli, direttore generale del Tecnopolo d'Abruzzo. Sono invitati anche il sindaco dell'Aquila Pierluigi Biondi, Roberto Santangelo, assessore alla Cultura della Regione Abruzzo, e Claudia Pagliariccio, consigliera comunale, per il Comune dell'Aquila.",
+      "Apertura e saluti istituzionali di Roberto Romanelli, direttore generale del Tecnopolo d'Abruzzo, e di Claudia Pagliariccio, consigliera comunale, per il Comune dell'Aquila. Sono invitati il sindaco dell'Aquila Pierluigi Biondi e Roberto Santangelo, assessore alla Cultura della Regione Abruzzo.",
       "Mirko Rocci, speaker e moderatore, presenta Clair Clinique, la startup di cosmetica personalizzata con intelligenza artificiale e robotica di cui è cofondatore e CTO, nata nel 2025 al Tecnopolo d'Abruzzo. Il suo ecosistema unisce il software in cloud Symphonie, il sistema robotico brevettato Opera e l'app Adagio. Clair Clinique è arrivata tra le prime 50 delle oltre 40.000 candidature di CoCreate Pitch 2026, promossa da Alibaba.com con Plug and Play.",
       "R13 Technology, società di ingegneria nata nel 2014 nel Dipartimento DIIIE dell'Università dell'Aquila e dal 2024 al Tecnopolo d'Abruzzo, progetta elettronica su misura, elettronica di potenza, controllo motore e firmware per l'automotive, l'aerospazio e il medicale. La presentano Daniele Sponta, project manager, e l'ing. Federico Visciano, ingegnere elettrico. https://r13technology.it/",
       "Dialogo con il pubblico moderato da Mirko Rocci, poi l'intermezzo poetico-letterario dell'aquilano Marco Pace.",
@@ -100,31 +101,22 @@
     "img_q": "/img/inno-talks-3/palazzo-fibbioni-connubio-q.jpg",
     "slides": [
       {
-        "img": "/img/inno-talks-3/palazzo-fibbioni-connubio.jpg",
-        "img_q": "/img/inno-talks-3/palazzo-fibbioni-connubio-q.jpg",
-        "w": 1600,
-        "h": 900,
-        "alt": "La facciata di Palazzo Fibbioni accanto alla vetrina del Ristorante Connubio",
-        "titolo": "Palazzo Fibbioni e il Connubio",
-        "testo": "Interventi e aperitivo sotto lo stesso tetto."
+        "img": "/img/inno-talks-3-locandina-v3.webp",
+        "w": 1200,
+        "h": 1791,
+        "fit": "contain",
+        "alt": "La locandina di Inno Talks #3, Le imprese del Tecnopolo",
+        "titolo": "Le imprese del Tecnopolo",
+        "testo": "Giovedì 19 novembre, ore 18:30, Palazzo Fibbioni."
       },
       {
         "img": "/img/inno-talks-3/mirko-rocci-speaker.jpg",
         "w": 900,
         "h": 1125,
         "pos": "top",
-        "alt": "Mirko Rocci, speaker e moderatore della serata",
+        "alt": "Mirko Rocci, ideatore di Inno99, speaker e moderatore della serata",
         "titolo": "Mirko Rocci",
-        "testo": "Speaker e moderatore, presenta Clair Clinique."
-      },
-      {
-        "img": "/img/inno-talks-3-locandina-v2.webp",
-        "w": 1200,
-        "h": 1791,
-        "fit": "contain",
-        "alt": "La locandina di Inno Talks #3, Le imprese del Tecnopolo",
-        "titolo": "La locandina",
-        "testo": "Scaricala dalla pagina della serata."
+        "testo": "L'ideatore di Inno99 presenta Clair Clinique."
       },
       {
         "img": "/img/roberto-romanelli.jpg",
@@ -133,7 +125,24 @@
         "fit": "persona",
         "alt": "Roberto Romanelli, direttore generale del Tecnopolo d'Abruzzo",
         "titolo": "Roberto Romanelli",
-        "testo": "Direttore generale del Tecnopolo d'Abruzzo."
+        "testo": "Il direttore generale del Tecnopolo d'Abruzzo introduce le imprese."
+      },
+      {
+        "img": "/img/inno-talks-3/palazzo-fibbioni.jpg",
+        "w": 939,
+        "h": 698,
+        "alt": "La facciata restaurata di Palazzo Fibbioni su via San Bernardino",
+        "titolo": "Palazzo Fibbioni",
+        "testo": "Ai Quattro Cantoni, nel cuore dell'Aquila.",
+        "credito": "Foto Lasacrasillaba, CC BY-SA 3.0, Wikimedia Commons"
+      },
+      {
+        "img": "/img/inno-talks-3/connubio-cantina.jpg",
+        "w": 1140,
+        "h": 733,
+        "alt": "La cantina del Ristorante Connubio, con volte bianche, divani in pelle e scaffali di bottiglie",
+        "titolo": "A seguire, aperitivo al Connubio",
+        "testo": "Nella cantina del ristorante, offerto gratuitamente."
       }
     ]
   }

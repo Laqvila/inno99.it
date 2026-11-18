@@ -554,7 +554,8 @@ def carosello_prossimo(e):
         # il riquadro del carosello è quasi quadrato anche su telefono: se c'è, si usa la versione quadrata
         src, w, h = (sl["img_q"], 1100, 1100) if sl.get("img_q") else (sl["img"], sl["w"], sl["h"])
         img = f'<img src="{a(src)}" alt="{a(sl["alt"])}" width="{w}" height="{h}" loading="lazy" />'
-        cap = f'<figcaption><b>{t(sl["titolo"])}</b><span>{t(sl["testo"])}</span></figcaption>' if sl.get("titolo") else ""
+        cred = f'<small class="cap-credit">{t(sl["credito"])}</small>' if sl.get("credito") else ""
+        cap = f'<figcaption><b>{t(sl["titolo"])}</b><span>{t(sl["testo"])}</span>{cred}</figcaption>' if sl.get("titolo") else ""
         slides.append(f'<figure class="{cls}">{img}{cap}</figure>')
     return (f'<div class="carousel" data-carousel aria-roledescription="carosello" aria-label="Foto di Inno Talks #{e["n"]}">'
             f'<div class="car-track" tabindex="0">{"".join(slides)}</div>'
