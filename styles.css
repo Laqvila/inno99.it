@@ -430,6 +430,8 @@ section{position:relative}
 .lu-logo img{display:block;height:30px;width:auto}
 .lu-logo img.logo-tall{height:44px}
 .lu-logo img.logo-xtall{height:58px}
+.lu-logo.flush{padding:0;overflow:hidden}
+.lu-logo.flush img{height:64px}
 .lu-logo-text{font-family:var(--font-d);font-weight:700;letter-spacing:.08em;color:#1b2a4a;font-size:.95rem}
 .greet-list{list-style:none;counter-reset:greet;display:flex;flex-direction:column;gap:14px;margin-top:10px}
 .greet-list li{counter-increment:greet;position:relative;display:flex;align-items:flex-start;gap:14px;padding-left:40px}

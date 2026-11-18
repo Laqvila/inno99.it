@@ -307,7 +307,7 @@ def footer():
   <div class="container footer-grid">
     <div class="footer-brand">
       <a class="brand" href="/" aria-label="Inno99, vai alla home"><span class="brand-mark">{burst("brand-burst")}</span><span class="brand-word">Inn<span class="o">o</span>99</span></a>
-      <p>L'ecosistema dell'innovazione all'Aquila. Un programma di Innovalley nel quadro di L'Aquila Capitale Italiana della Cultura 2026.</p>
+      <p>L'ecosistema dell'innovazione all'Aquila. Un programma di Innovalley nell'anno di L'Aquila Capitale Italiana della Cultura 2026.</p>
       <a class="p-logo-iv" href="https://www.inno-valley.it" target="_blank" rel="noopener" aria-label="Innovalley Open Innovation Hub"><img src="/img/logo-innovalley.png" width="2048" height="1067" alt="Innovalley" loading="lazy" /></a>
     </div>
     <div class="footer-col">
@@ -748,7 +748,7 @@ def llms(metas):
     """llms.txt, la scheda del sito per i motori di ricerca basati su IA, rigenerata dai dati."""
     r = ["# Inno99", "",
          "> Inno99 è il programma di Innovalley che porta la cultura dell'innovazione nei locali del centro storico "
-         "dell'Aquila, nel quadro di L'Aquila Capitale Italiana della Cultura 2026. Si articola in due verticali, "
+         "dell'Aquila, nell'anno di L'Aquila Capitale Italiana della Cultura 2026. Si articola in due verticali, "
          "gli Inno Talks e Inno Podcast.", "",
          "Inno99 è nato da un'idea di Mirko Rocci e Federico Fioriti per Innovalley Open Innovation Hub. Mirko Rocci, "
          "fisico, è ideatore e curatore del programma e conduce ogni serata. Sponsor unico del ciclo 2026 è Synergie Italia.",
