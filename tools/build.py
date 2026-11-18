@@ -544,6 +544,25 @@ def comp_countdown(meta, args):
     return countdown(e) if e and e.get("inizio") else ""
 
 
+def carosello_prossimo(e):
+    """Le foto della prossima serata che scorrono nel riquadro della home.
+    fit: "cover" (riempie), "contain" (intera, su fondo sfumato), "persona" (ritratto tondo su fondo sfumato)."""
+    slides = []
+    for sl in e["slides"]:
+        fit = sl.get("fit", "cover")
+        cls = "car-slide" + (f" fit-{fit}" if fit != "cover" else "") + (" pos-top" if sl.get("pos") == "top" else "")
+        # il riquadro del carosello è quasi quadrato anche su telefono: se c'è, si usa la versione quadrata
+        src, w, h = (sl["img_q"], 1100, 1100) if sl.get("img_q") else (sl["img"], sl["w"], sl["h"])
+        img = f'<img src="{a(src)}" alt="{a(sl["alt"])}" width="{w}" height="{h}" loading="lazy" />'
+        cap = f'<figcaption><b>{t(sl["titolo"])}</b><span>{t(sl["testo"])}</span></figcaption>' if sl.get("titolo") else ""
+        slides.append(f'<figure class="{cls}">{img}{cap}</figure>')
+    return (f'<div class="carousel" data-carousel aria-roledescription="carosello" aria-label="Foto di Inno Talks #{e["n"]}">'
+            f'<div class="car-track" tabindex="0">{"".join(slides)}</div>'
+            '<button type="button" class="car-btn car-prev" aria-label="Foto precedente">‹</button>'
+            '<button type="button" class="car-btn car-next" aria-label="Foto successiva">›</button>'
+            '<div class="car-dots" role="tablist" aria-label="Scegli la foto"></div></div>')
+
+
 def comp_prossimo(meta, args):
     """Il riquadro della prossima serata in home. Sparisce da solo se nessuna serata è annunciata."""
     e = prossimo()
@@ -557,11 +576,18 @@ def comp_prossimo(meta, args):
         # su schermi larghi il riquadro è quasi quadrato: si usa la versione quadrata dell'immagine
         media = (f'<picture><source media="(min-width: 981px)" srcset="{a(e["img_q"])}" width="1100" height="1100" />'
                  f'{media}</picture>')
+    if e.get("slides"):
+        media = carosello_prossimo(e)
+        apri = '<div class="ne-media has-car">'
+        chiudi = "</div>"
+    else:
+        apri = f'<a class="ne-media" href="/inno-talks/{e["n"]}/" tabindex="-1" aria-hidden="true">'
+        chiudi = "</a>"
     return f"""<div class="next-ev reveal">
-  <a class="ne-media" href="/inno-talks/{e['n']}/" tabindex="-1" aria-hidden="true">
+  {apri}
     {media}
     <span class="ne-date"><b>{g}</b><small>{m}</small></span>
-  </a>
+  {chiudi}
   <div class="ne-body">
     <span class="kicker"><span class="pulse-dot"></span> Prossima serata · Inno Talks #{e['n']}</span>
     <h2><a href="/inno-talks/{e['n']}/">{t(e['titolo'])}</a></h2>

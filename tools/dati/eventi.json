@@ -79,16 +79,17 @@
     "img_w": 1600,
     "img_h": 900,
     "img_alt": "La facciata di Palazzo Fibbioni accanto alla vetrina del Ristorante Connubio",
-    "sintesi": "Mirko Rocci presenta Clair Clinique e R13 Technology racconta l'elettronica su misura, poi l'intermezzo poetico-letterario di Marco Pace e l'aperitivo offerto al Ristorante Connubio.",
+    "sintesi": "Clair Clinique e R13 Technology, l'intermezzo poetico-letterario di Marco Pace e l'aperitivo offerto al Connubio.",
     "badge": "Prossima serata",
     "ospiti": [
       "Daniele Sponta",
       "Federico Visciano",
-      "Marco Pace"
+      "Marco Pace",
+      "Roberto Romanelli"
     ],
     "llms": [
       "Giovedì 19 novembre 2026 alle 18:30 a Palazzo Fibbioni, nel centro storico dell'Aquila.",
-      "Apertura e saluti istituzionali. Sono invitati Roberto Santangelo, assessore alla Cultura della Regione Abruzzo, Claudia Pagliariccio, consigliera comunale, per il Comune dell'Aquila, e Roberto Romanelli, direttore generale del Tecnopolo d'Abruzzo.",
+      "Apertura e saluti istituzionali di Roberto Romanelli, direttore generale del Tecnopolo d'Abruzzo. Sono invitati anche Roberto Santangelo, assessore alla Cultura della Regione Abruzzo, e Claudia Pagliariccio, consigliera comunale, per il Comune dell'Aquila.",
       "Mirko Rocci, speaker e moderatore, presenta Clair Clinique, la startup di cosmetica personalizzata con intelligenza artificiale e robotica di cui è cofondatore e CTO, nata nel 2025 al Tecnopolo d'Abruzzo. Il suo ecosistema unisce il software in cloud Symphonie, il sistema robotico brevettato Opera e l'app Adagio. Clair Clinique è arrivata tra le prime 50 delle oltre 40.000 candidature di CoCreate Pitch 2026, promossa da Alibaba.com con Plug and Play.",
       "R13 Technology, società di ingegneria nata nel 2014 nel Dipartimento DIIIE dell'Università dell'Aquila e dal 2024 al Tecnopolo d'Abruzzo, progetta elettronica su misura, elettronica di potenza, controllo motore e firmware per l'automotive, l'aerospazio e il medicale. La presentano Daniele Sponta, project manager, e l'ing. Federico Visciano, ingegnere elettrico. https://r13technology.it/",
       "Dialogo con il pubblico moderato da Mirko Rocci, poi l'intermezzo poetico-letterario dell'aquilano Marco Pace.",
@@ -96,6 +97,44 @@
       "Ingresso gratuito con posti limitati. Prenotazioni a eventi@inno-valley.it o al 328 82 95 361."
     ],
     "extra": "Al termine l'aperitivo offerto al Ristorante Connubio",
-    "img_q": "/img/inno-talks-3/palazzo-fibbioni-connubio-q.jpg"
+    "img_q": "/img/inno-talks-3/palazzo-fibbioni-connubio-q.jpg",
+    "slides": [
+      {
+        "img": "/img/inno-talks-3/palazzo-fibbioni-connubio.jpg",
+        "img_q": "/img/inno-talks-3/palazzo-fibbioni-connubio-q.jpg",
+        "w": 1600,
+        "h": 900,
+        "alt": "La facciata di Palazzo Fibbioni accanto alla vetrina del Ristorante Connubio",
+        "titolo": "Palazzo Fibbioni e il Connubio",
+        "testo": "Interventi e aperitivo sotto lo stesso tetto."
+      },
+      {
+        "img": "/img/inno-talks-3/mirko-rocci-speaker.jpg",
+        "w": 900,
+        "h": 1125,
+        "pos": "top",
+        "alt": "Mirko Rocci, speaker e moderatore della serata",
+        "titolo": "Mirko Rocci",
+        "testo": "Speaker e moderatore, presenta Clair Clinique."
+      },
+      {
+        "img": "/img/inno-talks-3-locandina.webp",
+        "w": 1200,
+        "h": 1791,
+        "fit": "contain",
+        "alt": "La locandina di Inno Talks #3, Le imprese del Tecnopolo",
+        "titolo": "La locandina",
+        "testo": "Scaricala dalla pagina della serata."
+      },
+      {
+        "img": "/img/roberto-romanelli.jpg",
+        "w": 300,
+        "h": 300,
+        "fit": "persona",
+        "alt": "Roberto Romanelli, direttore generale del Tecnopolo d'Abruzzo",
+        "titolo": "Roberto Romanelli",
+        "testo": "Direttore generale del Tecnopolo d'Abruzzo."
+      }
+    ]
   }
 ]

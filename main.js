@@ -243,8 +243,9 @@
     new IntersectionObserver((es) => es.forEach((e) => (e.isIntersecting ? play() : stop())), { threshold: 0.4 }).observe(car);
     mark(0);
     // nella galleria le foto verticali e orizzontali convivono: dietro ognuna c'è la stessa foto sfocata
-    if (car.closest(".gallery")) {
-      slides.forEach((s) => {
+    const sfumate = car.closest(".gallery") ? slides : slides.filter((s) => s.matches(".fit-contain, .fit-persona"));
+    if (sfumate.length) {
+      sfumate.forEach((s) => {
         const img = s.querySelector("img");
         if (!img) return;
         const set = () => s.style.setProperty("--bg", 'url("' + (img.currentSrc || img.src) + '")');
