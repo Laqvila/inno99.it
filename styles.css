@@ -931,3 +931,8 @@ a.p-logo:hover{color:var(--text)}
   .reveal,.hero-title .w,.hero-sub,.hero-tag,.hero-cta,.hero-meta{opacity:1!important;transform:none!important}
   html{scroll-behavior:auto}
 }
+
+/* Reel verticale al posto della diretta (Inno Talks #3) */
+.talk-video.is-reel{grid-template-columns:minmax(0,340px) minmax(0,1fr)}
+.tv-reel{display:block;width:100%;height:auto;aspect-ratio:9/16;border-radius:16px;border:1px solid var(--line);background:#000;object-fit:cover}
+@media (max-width:980px){.talk-video.is-reel{grid-template-columns:1fr}.talk-video.is-reel .tv-player{max-width:360px;width:100%;margin:0 auto}}

@@ -65,85 +65,53 @@
   },
   {
     "n": 3,
-    "stato": "prossimo",
+    "stato": "svolto",
     "data": "2026-11-19",
-    "ora": "18:30",
-    "inizio": "2026-11-19T18:30:00+01:00",
     "data_txt": "19 novembre 2026",
     "giorno": "Giovedì 19 novembre 2026",
     "titolo": "Le imprese del Tecnopolo",
     "sottotitolo": "Storie d'impresa e un intermezzo poetico-letterario a Palazzo Fibbioni",
     "luogo": "Palazzo Fibbioni",
-    "luogo_esteso": "Palazzo Fibbioni, via San Bernardino",
-    "img": "/img/inno-talks-3/palazzo-fibbioni-connubio.jpg",
+    "luogo_esteso": "Sala Rivera di Palazzo Fibbioni, via San Bernardino",
+    "img": "/img/inno-talks-3/serata/sala.jpg",
     "img_w": 1600,
     "img_h": 900,
-    "img_alt": "La facciata di Palazzo Fibbioni accanto alla vetrina del Ristorante Connubio",
-    "sintesi": "Clair Clinique e R13 Technology, l'intermezzo poetico-letterario di Marco Pace e l'aperitivo offerto al Connubio.",
-    "badge": "Prossima serata",
+    "img_alt": "La Sala Rivera di Palazzo Fibbioni piena di pubblico durante Inno Talks #3",
+    "sintesi": "R13 Technology, Clair Clinique e, per la prima volta, un intermezzo poetico-letterario. Oltre 50 persone e il reel della serata.",
+    "badge": "Sala piena",
     "ospiti": [
-      "Daniele Sponta",
-      "Federico Visciano",
-      "Marco Pace",
+      "Roberto Santangelo",
       "Roberto Romanelli",
-      "Claudia Pagliariccio"
+      "Federico Visciano",
+      "Daniele Sponta",
+      "Marco Pace"
     ],
     "llms": [
-      "Giovedì 19 novembre 2026 alle 18:30 a Palazzo Fibbioni, nel centro storico dell'Aquila.",
-      "Apertura e saluti istituzionali di Roberto Romanelli, direttore generale del Tecnopolo d'Abruzzo, e di Claudia Pagliariccio, consigliera comunale, per il Comune dell'Aquila. Sono invitati il sindaco dell'Aquila Pierluigi Biondi e Roberto Santangelo, assessore alla Cultura della Regione Abruzzo.",
-      "Mirko Rocci, speaker e moderatore, presenta Clair Clinique, la startup di cosmetica personalizzata con intelligenza artificiale e robotica di cui è cofondatore e CTO, nata nel 2025 al Tecnopolo d'Abruzzo. Il suo ecosistema unisce il software in cloud Symphonie, il sistema robotico brevettato Opera e l'app Adagio. Clair Clinique è arrivata tra le prime 50 delle oltre 40.000 candidature di CoCreate Pitch 2026, promossa da Alibaba.com con Plug and Play.",
-      "R13 Technology, società di ingegneria nata nel 2014 nel Dipartimento DIIIE dell'Università dell'Aquila e dal 2024 al Tecnopolo d'Abruzzo, progetta elettronica su misura, elettronica di potenza, controllo motore e firmware per l'automotive, l'aerospazio e il medicale. La presentano Daniele Sponta, project manager, e l'ing. Federico Visciano, ingegnere elettrico. https://r13technology.it/",
-      "Dialogo con il pubblico moderato da Mirko Rocci, poi l'intermezzo poetico-letterario dell'aquilano Marco Pace.",
-      "Al termine l'Aperitivo dell'Innovazione al Ristorante Connubio, nelle sale dello stesso Palazzo Fibbioni (via San Bernardino 8-16), offerto gratuitamente.",
-      "Ingresso gratuito con posti limitati. Prenotazioni a eventi@inno-valley.it o al 328 82 95 361."
+      "Giovedì 19 novembre 2026 nella Sala Rivera di Palazzo Fibbioni, nel centro storico dell'Aquila. Oltre cinquanta tra studenti, ricercatori, imprenditori e giovani del servizio civile.",
+      "Conduzione di Mirko Rocci. L'assessore regionale alla Cultura Roberto Santangelo ha portato il saluto della Regione Abruzzo.",
+      "Roberto Romanelli, direttore generale del Tecnopolo d'Abruzzo, ha introdotto R13 Technology, presentata dall'ing. Federico Visciano e da Daniele Sponta: uno spin-off di due studenti dell'Università dell'Aquila con sedici dipendenti e oltre cento progetti. https://r13technology.it/",
+      "Mirko Rocci ha presentato L'AquiLive e Clair Clinique, la startup di cosmetica personalizzata nata al Tecnopolo d'Abruzzo di cui è cofondatore.",
+      "Per la prima volta un intermezzo poetico-letterario, con l'aquilano Marco Pace. Saluto di Federico Fioriti, co-ideatore di Inno99.",
+      "Nel saluto finale Romanelli ha annunciato che il Tecnopolo sta pensando a un ruolo di guida scientifica per Mirko Rocci.",
+      "Aperitivo dell'Innovazione al Ristorante Connubio. Il reel della serata su https://inno99.it/inno-talks/3/#reel"
     ],
-    "extra": "Al termine l'aperitivo offerto al Ristorante Connubio",
-    "img_q": "/img/inno-talks-3/palazzo-fibbioni-connubio-q.jpg",
-    "slides": [
-      {
-        "img": "/img/inno-talks-3-locandina-v3.webp",
-        "w": 1200,
-        "h": 1791,
-        "fit": "contain",
-        "alt": "La locandina di Inno Talks #3, Le imprese del Tecnopolo",
-        "titolo": "Le imprese del Tecnopolo",
-        "testo": "Giovedì 19 novembre, ore 18:30, Palazzo Fibbioni."
-      },
-      {
-        "img": "/img/inno-talks-3/mirko-rocci-speaker.jpg",
-        "w": 900,
-        "h": 1125,
-        "pos": "top",
-        "alt": "Mirko Rocci, ideatore di Inno99, speaker e moderatore della serata",
-        "titolo": "Mirko Rocci",
-        "testo": "L'ideatore di Inno99 presenta Clair Clinique."
-      },
-      {
-        "img": "/img/roberto-romanelli.jpg",
-        "w": 300,
-        "h": 300,
-        "fit": "persona",
-        "alt": "Roberto Romanelli, direttore generale del Tecnopolo d'Abruzzo",
-        "titolo": "Roberto Romanelli",
-        "testo": "Il direttore generale del Tecnopolo d'Abruzzo introduce le imprese."
-      },
-      {
-        "img": "/img/inno-talks-3/palazzo-fibbioni.jpg",
-        "w": 939,
-        "h": 698,
-        "alt": "La facciata restaurata di Palazzo Fibbioni su via San Bernardino",
-        "titolo": "Palazzo Fibbioni",
-        "testo": "Ai Quattro Cantoni, nel cuore dell'Aquila.",
-        "credito": "Foto Lasacrasillaba, CC BY-SA 3.0, Wikimedia Commons"
-      },
-      {
-        "img": "/img/inno-talks-3/connubio-cantina.jpg",
-        "w": 1140,
-        "h": 733,
-        "alt": "La cantina del Ristorante Connubio, con volte bianche, divani in pelle e scaffali di bottiglie",
-        "titolo": "A seguire, aperitivo al Connubio",
-        "testo": "Nella cantina del ristorante, offerto gratuitamente."
-      }
+    "partecipanti": 50
+  },
+  {
+    "n": 4,
+    "stato": "in-preparazione",
+    "data": "2026-12-15",
+    "data_txt": "Metà dicembre 2026",
+    "giorno": "Metà dicembre 2026",
+    "titolo": "In preparazione",
+    "sottotitolo": "Data, luogo e ospiti in arrivo",
+    "luogo": "",
+    "luogo_esteso": "Un locale del centro storico dell'Aquila",
+    "sintesi": "L'ultimo Aperitivo dell'Innovazione del 2026. Data, luogo e ospiti saranno annunciati a breve.",
+    "badge": "In preparazione",
+    "ospiti": [],
+    "llms": [
+      "L'ultimo Inno Talks del 2026 è in preparazione per metà dicembre all'Aquila. Data, luogo e ospiti saranno annunciati su https://inno99.it/inno-talks/4/"
     ]
   }
 ]
