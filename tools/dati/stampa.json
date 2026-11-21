@@ -1,5 +1,21 @@
 [
   {
+    "id": "ilcentro-2026-11-21",
+    "evento": 3,
+    "testata": "Il Centro",
+    "tipo": "cartaceo",
+    "data": "2026-11-21",
+    "nota": "pagina 28, edizione dell'Aquila",
+    "titolo": "Il Tecnopolo punta su Mirko Rocci. Per lui un ruolo di guida scientifica",
+    "estratto": "Il racconto della serata a Palazzo Fibbioni, con oltre cinquanta persone in sala, gli interventi di R13 Technology, Clair Clinique e Marco Pace e l'annuncio del direttore generale del Tecnopolo d'Abruzzo Roberto Romanelli, che pensa per Mirko Rocci a un ruolo di guida scientifica.",
+    "url": "/img/stampa/il-centro-21-novembre-pagina.jpg",
+    "cta": "Vedi l'articolo",
+    "img": "/img/stampa/il-centro-21-novembre.jpg",
+    "img_w": 1368,
+    "img_h": 752,
+    "evidenza": true
+  },
+  {
     "id": "ilcentro-2026-11-19",
     "evento": 3,
     "testata": "Il Centro",
