@@ -16,6 +16,19 @@
     "evidenza": true
   },
   {
+    "id": "abruzzoweb-2026-11-21",
+    "evento": 3,
+    "testata": "AbruzzoWeb",
+    "tipo": "online",
+    "data": "2026-11-21",
+    "titolo": "Tecnopolo: Romanelli, «Rocci guida scientifica», sala piena per Inno Talks",
+    "estratto": "Il resoconto della serata a Palazzo Fibbioni, con oltre cinquanta persone in sala, e l'annuncio del direttore generale del Tecnopolo d'Abruzzo Roberto Romanelli, che per Mirko Rocci pensa al ruolo di guida scientifica del polo.",
+    "url": "https://www.abruzzoweb.it/tecnopolo-romanelli-rocci-guida-scientifica-sala-piena-per-inno-talks/",
+    "img": "/img/stampa/abruzzoweb-21-novembre.jpg",
+    "img_w": 640,
+    "img_h": 420
+  },
+  {
     "id": "ilcentro-2026-11-19",
     "evento": 3,
     "testata": "Il Centro",

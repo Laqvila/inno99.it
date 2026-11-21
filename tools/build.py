@@ -430,6 +430,11 @@ def in_evidenza_prima(voci):
 
 
 def comp_stampa(meta, args):
+    if "id" in args:
+        # una sola uscita in evidenza, per dare risalto a un articolo fuori dalla rassegna
+        voci = [s for s in STAMPA if s["id"] == args["id"]]
+        assert voci, args["id"]
+        return '<div class="press-grid press-spot">\n' + "\n".join(press_card(s) for s in voci) + "\n</div>"
     if "evento" in args:
         voci = in_evidenza_prima([s for s in STAMPA if s["evento"] == int(args["evento"])])
         return '<div class="press-grid">\n' + "\n".join(press_card(s, mostra_evento=False) for s in voci) + "\n</div>"
